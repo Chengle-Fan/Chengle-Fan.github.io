@@ -2,7 +2,7 @@
 layout: research
 title: Terahertz Chiral Valley Edge States via Dirac Mass Engineering
 description: Transferring a chiral valley edge-state mechanism from microwave to a fabrication-compatible THz platform (visiting research at NTU)
-img: assets/img/projects/thz_valley/supercell_bands_3d.png
+img: assets/img/projects/thz_valley/3D.png
 importance: 3
 category: research
 short_title: "Terahertz chiral valley edge states"
@@ -11,7 +11,6 @@ role: "Visiting researcher · NTU"
 status: "Numerically validated design"
 summary: "Designing a Chern–valley interface around 0.14 THz, with 3D simulations that account for fabrication tolerances and air layers."
 ---
-
 **Context:** Visiting research student, School of Physical and Mathematical Sciences, Nanyang Technological University (NTU), Singapore, with Prof. Baile Zhang (Jan–Apr 2026).
 
 During my visit to NTU, I worked on transferring a chiral valley edge-state mechanism from the microwave regime to a **fabrication-compatible THz platform**, with the long-term goal of moving topological wave transport toward compact, chip-compatible implementations. The concept relies on Dirac mass engineering at a hybrid Chern photonic crystal (CPC) – valley photonic crystal (VPC) interface, where valley-dependent and chiral transport can coexist.
