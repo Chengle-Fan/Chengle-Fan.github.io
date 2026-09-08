@@ -120,9 +120,9 @@ body > .container[role="main"] { padding-inline: 2rem; margin-top: 3.25rem !impo
   box-shadow: inset 0 1px 0 var(--glass-highlight);
 }
 @media (min-width: 576px) {
-  #light-toggle { transform: translateY(12px); }
-  #light-toggle:hover { transform: translateY(12px) scale(1.03); }
-  #light-toggle:active { transform: translateY(12px) scale(0.97); }
+  #light-toggle { transform: translateY(10px); }
+  #light-toggle:hover { transform: translateY(10px) scale(1.03); }
+  #light-toggle:active { transform: translateY(10px) scale(0.97); }
 }
 .post-header { margin-bottom: 2.5rem; max-width: 54rem; }
 .post-header .post-title { font-size: clamp(2rem, 4vw, 2.9rem); line-height: 1.18; }
@@ -165,9 +165,6 @@ a.button-secondary:hover { background-color: var(--glass-bg-strong); text-decora
     backdrop-filter: blur(12px) saturate(145%);
     -webkit-backdrop-filter: blur(12px) saturate(145%);
   }
-  #light-toggle:active {
-    transform: scale(0.97);
-  }
 }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   #navbar,
@@ -176,103 +173,6 @@ a.button-secondary:hover { background-color: var(--glass-bg-strong); text-decora
     background: var(--glass-bg-strong);
   }
 }
-
-/* ---------------------------------------------------------------------------
-   Liquid Glass navbar transitions — progressive enhancement.
-   Navigation and theme switching stay fully functional without animations or
-   the View Transition API; these rules only smooth the experience.
---------------------------------------------------------------------------- */
-@view-transition {
-  navigation: auto;
-}
-
-/* The moving part: the single active nav pill (exactly one per page). */
-#navbar .nav-item.active > .nav-link {
-  view-transition-name: active-nav-glass;
-}
-
-::view-transition-group(active-nav-glass) {
-  animation-duration: 380ms;
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-::view-transition-old(active-nav-glass),
-::view-transition-new(active-nav-glass) {
-  height: 100%;
-  mix-blend-mode: normal;
-}
-
-/* Short whole-page handover so navigation still feels instant. */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 150ms;
-}
-
-/* Nav links: quiet hover / press feedback (no vertical movement). */
-#navbar .navbar-nav .nav-item > .nav-link {
-  border-radius: 6px;
-  transition:
-    background-color 180ms ease,
-    color 180ms ease,
-    box-shadow 180ms ease,
-    transform 180ms ease;
-}
-#navbar .navbar-nav .nav-item:not(.active) > .nav-link:hover {
-  background-color: var(--glass-control-bg);
-  box-shadow: inset 0 1px 0 var(--glass-highlight);
-}
-#navbar .navbar-nav .nav-item:not(.active) > .nav-link:active {
-  transform: scale(0.98);
-}
-#navbar .navbar-nav .nav-item.active > .nav-link:hover {
-  box-shadow:
-    inset 0 1px 0 var(--glass-highlight),
-    0 1px 6px var(--glass-shadow);
-}
-
-/* Theme icons: cross-fade inside the fixed button footprint. The theme's
-   display:none switching is replaced by opacity/visibility so all three icons
-   can overlap and transition; data-theme-setting still picks the visible one
-   (system icon is the default while the attribute is absent). */
-html[data-theme-setting] #light-toggle i,
-html:root #light-toggle i {
-  display: block;
-}
-#light-toggle {
-  position: relative;
-}
-#light-toggle i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  visibility: hidden;
-  /* !important: survives the theme's html.transition rules, which force
-     background/border/box-shadow-only transitions (and would otherwise make
-     this opacity/visibility/transform cross-fade snap instantly). */
-  transition:
-    opacity 200ms ease,
-    visibility 200ms ease,
-    transform 200ms ease !important;
-}
-#light-toggle-system {
-  transform: translate(-50%, -50%) scale(0.85);
-}
-#light-toggle-dark {
-  transform: translate(-50%, -50%) rotate(-20deg) scale(0.82);
-}
-#light-toggle-light {
-  transform: translate(-50%, -50%) rotate(20deg) scale(0.82);
-}
-html:not([data-theme-setting]) #light-toggle-system,
-html[data-theme-setting="system"] #light-toggle-system,
-html[data-theme-setting="dark"] #light-toggle-dark,
-html[data-theme-setting="light"] #light-toggle-light {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, -50%) rotate(0deg) scale(1);
-}
-
 .file-label { color: var(--global-text-color-light); font-size: 0.75rem; letter-spacing: 0.05em; }
 .intro-email { display: inline-block; font-size: 0.875rem; overflow-wrap: anywhere; }
 .home-section { padding: 2.5rem 0; border-top: 1px solid var(--global-divider-color); }
@@ -355,15 +255,6 @@ footer { margin-top: 3rem; border-top: 1px solid var(--global-divider-color); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-  /* View Transition pseudo-elements are not matched by `*`; kill them here.
-     Browsers may already skip cross-document transitions under reduced motion. */
-  ::view-transition-group(active-nav-glass),
-  ::view-transition-old(active-nav-glass),
-  ::view-transition-new(active-nav-glass),
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
-    animation: none !important;
-  }
 }
 @media print {
   #navbar, footer, .project-back, .project-next, .action-links, .skip-link { display: none !important; }
