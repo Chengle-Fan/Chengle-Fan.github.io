@@ -8,10 +8,9 @@ announcements:
   scrollable: false
   limit: 3
 ---
-
 <section class="home-intro" aria-labelledby="intro-title">
   <div class="intro-copy">
-    <p class="eyebrow">Photonics · Topology · Wave transport</p>
+    <p class="eyebrow">Metamaterials · Topological Photonics · Light-Matter Interaction</p>
     <h1 id="intro-title">Chengle Fan</h1>
     <p class="intro-role">Undergraduate researcher at <a href="https://sustech.edu.cn/en/">SUSTech</a></p>
     <p class="intro-lead">I study how engineered photonic structures control the propagation of light.</p>
