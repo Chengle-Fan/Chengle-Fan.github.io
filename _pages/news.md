@@ -1,8 +1,8 @@
 ---
 layout: page
-title: News
+title: Updates
 permalink: /news/
-description: Research visits, grants, and milestones.
+description: Research experience, visits, grants, and milestones.
 ---
 
 {% include news.liquid %}

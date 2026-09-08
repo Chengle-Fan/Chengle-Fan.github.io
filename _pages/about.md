@@ -18,9 +18,8 @@ announcements:
     <p>My work connects topological band theory, full-wave simulation, and microwave experiments, with a focus on nonreciprocal transport and synthetic gauge fields.</p>
     <div class="action-links">
       <a class="button-primary" href="{{ '/projects/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
-      <a class="button-secondary" href="{{ '/assets/pdf/CV_general.pdf' | relative_url }}">Download CV <span class="file-label">PDF</span></a>
     </div>
-    <div class="intro-contact"><a class="intro-email" href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a><a href="https://github.com/{{ site.data.socials.github_username }}">GitHub ↗</a></div>
+    <div class="intro-contact"><a class="intro-email" href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a></div>
   </div>
   <figure class="intro-portrait">
     <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Portrait of Chengle Fan" width="480" height="600" fetchpriority="high">
@@ -71,12 +70,12 @@ announcements:
 </section>
 
 <section class="home-section" aria-labelledby="news-heading">
-  <div class="section-heading"><h2 id="news-heading">Recent news</h2><a href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">↗</span></a></div>
+  <div class="section-heading"><h2 id="news-heading">Recent updates</h2><a href="{{ '/news/' | relative_url }}">All updates <span aria-hidden="true">↗</span></a></div>
   {% include news.liquid limit=true %}
 </section>
 
 <section class="home-section" aria-labelledby="manuscript-heading">
-  <div class="section-heading"><h2 id="manuscript-heading">Manuscript in preparation</h2><a href="{{ '/publications/' | relative_url }}">Publication details <span aria-hidden="true">↗</span></a></div>
+  <div class="section-heading"><h2 id="manuscript-heading">Manuscript in preparation</h2><a href="{{ '/publications/' | relative_url }}">Manuscript details <span aria-hidden="true">↗</span></a></div>
   <div class="publications">{% bibliography --query @*[selected=true] %}</div>
 </section>
 

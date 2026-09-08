@@ -4,7 +4,7 @@
 
 ## 常见操作
 
-### 添加一条 News（首页动态）
+### 添加一条 Update（首页动态）
 在 `_news/` 下新建一个 `.md` 文件，文件名随意（建议 `YYYY-MM-简短描述.md`），内容模板：
 
 ```markdown
@@ -37,7 +37,7 @@ related_posts: false
    ```
 
 ### 添加一篇论文/出版物
-编辑 `_bibliography/papers.bib`，追加一条 BibTeX 条目即可，Publications 页会自动按年份分组渲染；当前页面有“稿件准备中”说明，正式发表后需一并更新该说明与首页章节标题。常用可选字段：
+编辑 `_bibliography/papers.bib`，追加一条 BibTeX 条目即可，Publications 页会自动按年份分组渲染；当前页面明确标注稿件仍在准备中且尚未投稿，投稿、接收或发表后需同步更新该说明与首页章节标题。常用可选字段：
 - `selected = {true}`：让该文出现在首页 "selected publications"
 - `preview = {fig.jpeg}`：配图（放在 `assets/img/publication_preview/` 下的相对路径）
 - `abbr = {PRL}`：期刊缩写徽章（配色在 `_data/venues.yml` 里定义）
@@ -46,7 +46,7 @@ related_posts: false
 
 ### 更新 CV
 - 网页版 CV：编辑 `_data/cv.yml`（结构化 YAML，仿照现有条目增删）。
-- PDF 版 CV：用新的 PDF 覆盖 `assets/pdf/CV_general.pdf`（文件名不变就不用改任何配置）。
+- 网站不提供 PDF 下载；对外联系时单独附上最新 CV。
 
 ### 更换头像
 把自己的照片命名为 `prof_pic.jpg` 放进 `assets/img/`，替换现有照片。建议使用清晰竖版照片；手机端会以方形裁切显示。
@@ -84,7 +84,7 @@ related_posts: false
 - `_layouts/research.liquid`：新增研究详情布局，继承主题 `page`，自动显示项目摘要和其他项目链接。
 - 未覆盖主题的 `_includes/` 或 `_sass/`。导航、搜索、论文渲染继续使用固定版本的主题 gems。
 - 科研封面使用现有 ImageMagick 管线生成的 WebP 响应式版本，原始图保留供详情页使用。
-- 投稿、接受、正式发表需要分别更新，不要把 `Manuscript in preparation` 写成已发表论文。
+- 投稿、接收、正式发表需要分别更新，不要把 `Manuscript in preparation` 写成已投稿或已发表论文。
 
-- `_layouts/cv.liquid`：有意覆盖主题 CV 布局，继续读取 `_data/cv.yml`。主题 1.0.2 的 CV 渲染器仅识别少数固定节名，原有 Research Experience、Research Grant、Leadership and Activities 的内容及教育 score 会被静默遗漏；本站布局按字段渲染这些内容，并保留可见 PDF 下载链接与章节目录。
+- `_layouts/cv.liquid`：有意覆盖主题 CV 布局，继续读取 `_data/cv.yml`。主题 1.0.2 的 CV 渲染器仅识别少数固定节名，原有 Research Experience、Research Grant、Leadership and Activities 的内容及教育 score 会被静默遗漏；本站布局按字段渲染这些内容，不再提供 PDF 下载，并保留章节目录。
 - 模板残留 `_pages/plugins.md` 已从构建排除，避免插件介绍混入学术网站。

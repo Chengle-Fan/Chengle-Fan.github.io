@@ -4,7 +4,7 @@ layout: page
 {% assign cv = site.data.cv.cv %}
 <div class="cv-intro">
   <p>{{ cv.summary }}</p>
-  <div class="action-links"><a class="button-primary" href="{{ page.cv_pdf | relative_url }}">Download complete CV <span class="file-label">PDF</span></a><a class="button-secondary" href="mailto:{{ cv.email }}">Email me</a></div>
+  <div class="action-links"><a class="button-secondary" href="mailto:{{ cv.email }}">Email me</a></div>
 </div>
 <div class="academic-cv">
 {% for section in cv.sections %}

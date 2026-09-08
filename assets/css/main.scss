@@ -63,6 +63,8 @@ img { max-width: 100%; height: auto; }
 body > .container[role="main"] { padding-inline: 2rem; margin-top: 3.25rem !important; }
 #navbar { box-shadow: none; border-bottom: 1px solid var(--global-divider-color); }
 #navbar .nav-link { font-size: 0.9375rem; font-weight: 500; padding: 0.85rem 0.9rem; }
+#search-toggle .nav-link { font-size: 0; }
+#search-toggle .nav-link i { font-size: 0.9375rem; }
 #navbar .navbar-brand { font-size: 1.25rem; letter-spacing: -0.03em; }
 .post-header { margin-bottom: 2.5rem; max-width: 54rem; }
 .post-header .post-title { font-size: clamp(2rem, 4vw, 2.9rem); line-height: 1.18; }

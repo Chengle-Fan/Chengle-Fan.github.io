@@ -2,8 +2,6 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 email: chandler.chengle.fan@gmail.com # your email address
-github_username: Chengle-Fan # your GitHub username
-cv_pdf: /assets/pdf/CV_general.pdf # path to your CV PDF file
 # rss_icon: true # uncomment to show the RSS icon
 # scholar_userid: # your Google Scholar ID (the part after &user= in your profile URL)
 # orcid_id: # your ORCID ID
