@@ -7,7 +7,7 @@ importance: 1
 category: research
 short_title: "Pseudospin-locked chiral edge states"
 platform: "Microwave photonic crystals"
-role: "Full-wave modeling & sample design"
+role: "Full-wave modeling & sample design and experiment"
 status: "Manuscript in preparation"
 summary: "Combining one-way edge transport with pseudospin-selective excitation, with microwave experiments and photonic routing devices."
 ---
@@ -58,14 +58,20 @@ At the QAH–CI interface, the spin Chern number difference C<sub>±</sub> = (0,
 
 Based on the coexistence of QSH, QAH, and CI phases in the same platform, I further designed topological devices that use pseudospin as a routing resource: a photonic **pseudospin multiplexer/demultiplexer** and a low-crosstalk **pseudospin-locked waveguide crossing**, validated in both simulation and measurement.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/mux_demux.jpeg" title="mux demux" alt="Simulated and measured field distributions of the pseudospin multiplexer and demultiplexer" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+</div>
+<div class="caption">
+    Pseudospin multiplexer/demultiplexer: pseudospin-up and pseudospin-down inputs are routed to different output ports.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/waveguide_crossing.jpeg" title="waveguide crossing" alt="Simulated and measured transport through a pseudospin-locked waveguide crossing" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Left: pseudospin multiplexer/demultiplexer — pseudospin-up and pseudospin-down inputs are routed to different output ports. Right: pseudospin-locked waveguide crossing with low crosstalk, in simulation and experiment.
+    Pseudospin-locked waveguide crossing with low crosstalk, in simulation and experiment.
 </div>
