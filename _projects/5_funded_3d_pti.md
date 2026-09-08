@@ -1,9 +1,14 @@
 ---
-layout: page
+layout: research
 title: 3D Photonic Topological Insulators at Telecommunication Wavelengths
 description: Project leader, SUSTech Undergraduate Research Training Program (2026–2027, funded)
 importance: 5
 category: research
+short_title: "3D topology at telecom wavelengths"
+platform: "Optical photonic crystals"
+role: "Project leader · SUSTech"
+status: "Funded project · 2026–2027"
+summary: "A funded research project to investigate three-dimensional photonic topological insulators near 1.55 μm and assess fabrication constraints."
 ---
 
 **Context:** Project leader, SUSTech Undergraduate Research Training Program (June 2026 – June 2027). Competitive university research grant of CNY 10,000.

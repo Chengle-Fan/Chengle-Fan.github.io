@@ -97,21 +97,21 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: false
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1120px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
@@ -190,6 +190,7 @@ kramdown:
 include: ["_pages"]
 exclude:
   - AGENTS.md
+  - _pages/plugins.md
   - HOW_TO_UPDATE.md
   - al-folio-upgrade-report.md
   - bin/
@@ -239,6 +240,7 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
+  - classifier-reborn
 
   # al-folio plugins
   - al_folio_core

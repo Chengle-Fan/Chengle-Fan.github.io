@@ -1,10 +1,15 @@
 ---
-layout: page
+layout: research
 title: Gauge-Field-Induced Duality and Self-Dual Photonic Crystals
 description: Translating hopping-sign patterns and gauge flux into dual and self-dual photonic-crystal Hamiltonians, from tight-binding models to full-wave verification
 img: assets/img/projects/gauge_duality/self_duality_lattices.png
 importance: 2
 category: research
+short_title: "Gauge-field-induced duality"
+platform: "Synthetic gauge fields"
+role: "Tight-binding & full-wave modeling"
+status: "Numerical research"
+summary: "Engineering coupling signs and gauge flux to realize dual and self-dual photonic lattices, and exploring Hofstadter-type spectra."
 ---
 
 **Context:** Undergraduate research assistant, Topological Physics Research Group (Prof. Zhen Gao), Department of EEE, SUSTech.
@@ -13,7 +18,7 @@ Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian con
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/gauge_duality/self_duality_lattices.png" title="self-duality" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/gauge_duality/self_duality_lattices.png" title="self-duality" alt="Dual and self-dual photonic lattice geometries and their coupling-sign patterns" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -30,7 +35,7 @@ Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian con
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gauge_duality/duality_bands.png" title="duality bands" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gauge_duality/duality_bands.png" title="duality bands" alt="Fourier-reconstructed dispersion spectra compared with tight-binding band predictions" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -43,7 +48,7 @@ As an extension, I engineered rotation-dependent effective couplings of higher-o
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gauge_duality/hofstadter_spectrum.png" title="hofstadter" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gauge_duality/hofstadter_spectrum.png" title="hofstadter" alt="Hofstadter-type spectrum of a photonic lattice with modulated coupling" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

@@ -1,0 +1,40 @@
+---
+layout: page
+---
+{% assign cv = site.data.cv.cv %}
+<div class="cv-intro">
+  <p>{{ cv.summary }}</p>
+  <div class="action-links"><a class="button-primary" href="{{ page.cv_pdf | relative_url }}">Download complete CV <span class="file-label">PDF</span></a><a class="button-secondary" href="mailto:{{ cv.email }}">Email me</a></div>
+</div>
+<div class="academic-cv">
+{% for section in cv.sections %}
+  <section class="cv-section" aria-labelledby="{{ section[0] | slugify }}">
+    <h2 id="{{ section[0] | slugify }}">{{ section[0] }}</h2>
+    {% for entry in section[1] %}
+    <article class="cv-entry">
+      {% if entry.institution or entry.company %}
+        <div class="cv-entry-heading"><h3>{{ entry.position | default: entry.studyType }}{% if entry.area %} in {{ entry.area }}{% endif %}</h3><p class="cv-date">{{ entry.start_date }} – {{ entry.end_date }}</p></div>
+        <p class="cv-organization">{% if entry.url %}<a href="{{ entry.url }}">{{ entry.institution | default: entry.company }}</a>{% else %}{{ entry.institution | default: entry.company }}{% endif %}</p>
+        {% if entry.location %}<p class="cv-location">{{ entry.location }}</p>{% endif %}
+        {% if entry.score %}<p class="cv-score">{{ entry.score }}</p>{% endif %}
+        {% if entry.summary %}<p>{{ entry.summary }}</p>{% endif %}
+        {% if entry.highlights %}<ul>{% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>{% endif %}
+        {% if entry.courses %}<p class="cv-coursework"><strong>Selected coursework:</strong> {{ entry.courses }}</p>{% endif %}
+      {% elsif entry.authors %}
+        <h3>{{ entry.title }}</h3>
+        <p>{{ entry.authors | join: ', ' }}</p>
+        <p class="research-status">{{ entry.publisher }} · {{ entry.releaseDate }}</p>
+      {% elsif entry.awarder %}
+        <div class="cv-entry-heading"><h3>{{ entry.title }}</h3><p class="cv-date">{{ entry.date }}</p></div>
+        <p class="cv-location">{{ entry.awarder }}</p>
+      {% elsif entry.keywords %}
+        <h3>{{ entry.name }}{% if entry.level %}<span class="cv-level"> · {{ entry.level }}</span>{% endif %}</h3>
+        <p>{{ entry.keywords }}</p>
+      {% else %}
+        <h3>{{ entry.name }}</h3><p>{{ entry.summary }}</p>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </section>
+{% endfor %}
+</div>

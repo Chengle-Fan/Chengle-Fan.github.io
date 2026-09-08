@@ -1,11 +1,15 @@
 ---
-layout: page
+layout: research
 title: Pseudospin-Locked Chiral Edge States in a Gyromagnetic Photonic Crystal
 description: Microwave realization of an edge state that is simultaneously nonreciprocal and pseudospin-selective (manuscript in preparation)
 img: assets/img/projects/gyromagnetic_phc/hero_experiment.jpeg
 importance: 1
 category: research
-related_publications: true
+short_title: "Pseudospin-locked chiral edge states"
+platform: "Microwave photonic crystals"
+role: "Full-wave modeling & sample design"
+status: "Manuscript in preparation"
+summary: "Combining one-way edge transport with pseudospin-selective excitation, with microwave experiments and photonic routing devices."
 ---
 
 **Context:** Undergraduate research assistant, Topological Physics Research Group (Prof. Zhen Gao), Department of EEE, SUSTech. A manuscript based on this work is in preparation.
@@ -14,7 +18,7 @@ Photonic quantum spin Hall (QSH) systems support pseudospin-locked *helical* edg
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/gyromagnetic_phc/concept.jpeg" title="concept" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/gyromagnetic_phc/concept.jpeg" title="concept" alt="Comparison of helical, chiral, and pseudospin-locked chiral edge transport" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -27,7 +31,7 @@ The platform is a Wu–Hu-type gyromagnetic photonic crystal. Unit-cell deformat
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/phase_design.jpeg" title="phase engineering" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/phase_design.jpeg" title="phase engineering" alt="Unit-cell geometries, bulk bands, and pseudospin eigenfields across the topological phase transition" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -42,14 +46,14 @@ I led the full-wave modeling and sample design: bulk-band and projected-band COM
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/hero_experiment.jpeg" title="experiment" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/hero_experiment.jpeg" title="experiment" alt="Microwave sample, edge dispersions, transmission spectra, and pseudospin-selective near-field measurements" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     Experimental observation of a single pseudospin-locked chiral edge state at the QAH–CI interface: sample and setup (a), simulated and FFT-reconstructed edge dispersion (b, e, f), bulk and one-way transmission spectra (c, d), and measured near-field maps under pseudospin-selective excitation (g–i).
 </div>
 
-At the QAH–CI interface, the spin Chern number difference C<sub>±</sub> = (0, −1) predicts a single pseudospin-down chiral edge state. Experimentally, rightward transmission inside the bandgap is about **25 dB stronger** than leftward transmission, confirming strong nonreciprocity; chiral-source near-field measurements show that the pseudospin-down source excites the guided right-propagating edge mode while the opposite pseudospin does not couple into the edge channel. The edge state also routes robustly around defects introduced on the interface.
+At the QAH–CI interface, the spin Chern number difference C<sub>±</sub> = (0, −1) predicts a single pseudospin-down chiral edge state. Experimentally, rightward transmission inside the bandgap is approximately **20 dB stronger** than leftward transmission, confirming strong nonreciprocity; chiral-source near-field measurements show that the pseudospin-down source excites the guided right-propagating edge mode while the opposite pseudospin does not couple into the edge channel. The edge state also routes robustly around defects introduced on the interface.
 
 ## Device-level extension
 
@@ -57,10 +61,10 @@ Based on the coexistence of QSH, QAH, and CI phases in the same platform, I furt
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/mux_demux.jpeg" title="mux demux" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/mux_demux.jpeg" title="mux demux" alt="Simulated and measured field distributions of the pseudospin multiplexer and demultiplexer" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/waveguide_crossing.jpeg" title="waveguide crossing" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/waveguide_crossing.jpeg" title="waveguide crossing" alt="Simulated and measured transport through a pseudospin-locked waveguide crossing" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

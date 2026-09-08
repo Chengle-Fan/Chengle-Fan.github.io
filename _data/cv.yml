@@ -57,7 +57,7 @@ cv:
         end_date: 2027-06
         summary: "Secured a competitive university research grant of CNY 10,000 for \"Design of 3D Photonic Topological Insulators at Telecommunication Wavelengths\"."
 
-    Publications:
+    Manuscript in Preparation:
       - title: Observation of pseudospin-locked chiral edge states in a gyromagnetic photonic crystal
         authors:
           - Chengle Fan
@@ -68,20 +68,16 @@ cv:
 
     Skills:
       - name: Computational electromagnetics
-        level: Advanced
         keywords: "COMSOL Multiphysics, MATLAB, eigenmode and frequency-domain modeling, bulk/projected bands, eigenfield reconstruction, dispersion analysis"
       - name: Band topology and numerical modeling
-        level: Advanced
         keywords: "Tight-binding modeling, Berry phase/curvature, Chern number, Wilson loop, synthetic gauge fields, wave-packet dynamics, FFT-based dispersion reconstruction"
       - name: Time-varying and spatiotemporal photonics
         level: Ongoing training
         keywords: "PWE/Floquet-Bloch band calculations, FDTD simulations, photonic time crystals, space-time-periodic media"
       - name: Experimental characterization
-        level: Advanced
         keywords: "VNA transmission spectroscopy, near-field mapping, chiral-source excitation, S-parameter analysis, optical alignment, CCD imaging, polarization microscopy, liquid-crystal cell assembly"
       - name: Programming and software
-        level: Intermediate
-        keywords: "MATLAB, COMSOL LiveLink, C, Meep FDTD, Zemax, TracePro"
+        keywords: "MATLAB and COMSOL LiveLink; basic experience with C and Meep FDTD; familiarity with Zemax and TracePro"
 
     Languages:
       - name: Mandarin Chinese

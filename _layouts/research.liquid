@@ -1,0 +1,17 @@
+---
+layout: page
+---
+<nav class="project-back" aria-label="Research navigation"><a href="{{ '/projects/' | relative_url }}">← All research projects</a></nav>
+<dl class="project-facts">
+  <div><dt>Platform</dt><dd>{{ page.platform }}</dd></div>
+  <div><dt>My role</dt><dd>{{ page.role }}</dd></div>
+  <div><dt>Status</dt><dd>{{ page.status }}</dd></div>
+</dl>
+<div class="research-article">{{ content }}</div>
+<nav class="project-next" aria-label="More research">
+  <h2>Explore more research</h2>
+  {% assign projects = site.projects | sort: 'importance' %}
+  {% for project in projects %}
+    {% unless project.url == page.url %}<a href="{{ project.url | relative_url }}">{{ project.short_title }} <span aria-hidden="true">↗</span></a>{% endunless %}
+  {% endfor %}
+</nav>

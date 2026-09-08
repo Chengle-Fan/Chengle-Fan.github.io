@@ -1,65 +1,30 @@
 ---
 layout: page
-title: projects
+title: Research
 permalink: /projects/
-description: Research projects in topological photonics and engineered wave systems.
+description: Topological photonics and engineered wave transport, from theoretical models to experimental characterization.
 nav: true
 nav_order: 2
-display_categories: [research]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
+<div class="research-index">
+{% assign sorted_projects = site.projects | sort: 'importance' %}
+{% for project in sorted_projects %}
+<article class="research-row{% unless project.img %} research-row-text{% endunless %}">
+  {% if project.img %}
+  <a class="research-image" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">{% assign image_stem = project.img | split: '.' | pop | join: '.' %}
+        <picture>
+          {% if site.imagemagick.enabled %}<source type="image/webp" srcset="{{ image_stem | relative_url }}-480.webp 480w, {{ image_stem | relative_url }}-800.webp 800w" sizes="(max-width: 680px) 90vw, 340px">{% endif %}
+          <img src="{{ project.img | relative_url }}" alt="" width="640" height="400" loading="lazy">
+        </picture></a>
   {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
+  <div class="research-row-copy">
+    <p class="eyebrow">{{ project.platform }}</p>
+    <h2><a href="{{ project.url | relative_url }}">{{ project.short_title }}</a></h2>
+    <p>{{ project.summary }}</p>
+    <p class="project-role">{{ project.role }}</p>
+    <div class="research-row-footer"><span class="research-status">{{ project.status }}</span><a href="{{ project.url | relative_url }}" aria-label="Read about {{ project.short_title }}">Read project <span aria-hidden="true">↗</span></a></div>
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+</article>
+{% endfor %}
 </div>
