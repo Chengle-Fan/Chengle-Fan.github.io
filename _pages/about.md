@@ -31,7 +31,7 @@ announcements:
   <div class="about-columns">
     <div>
       <p>I am pursuing a B.Eng. in Optoelectronic Information Science and Engineering at SUSTech, with graduation expected in June 2027. Since February 2025, I have worked in Prof. Zhen Gao’s Topological Physics Research Group in the Department of Electronic and Electrical Engineering.</p>
-      <p>From January to April 2026, I was a visiting research student with <a href="https://personal.ntu.edu.sg/blzhang/">Prof. Baile Zhang</a> at Nanyang Technological University, developing fabrication-compatible terahertz photonic structures.</p>
+      <p>From January to April 2026, I was a visiting research student with Prof. Baile Zhang at Nanyang Technological University, developing fabrication-compatible terahertz photonic structures.</p>
     </div>
     <div class="research-interests">
       <h3>Research interests</h3>
