@@ -1,0 +1,6 @@
+# Coauthors
+# Map coauthor last names to their homepage URLs; matching names in
+# publications will be rendered as links. Example:
+# "gao":
+#   - firstname: ["Zhen", "Z."]
+#     url: https://example.com/zhen-gao

@@ -1,0 +1,6 @@
+# Journal/conference abbreviations shown as badges next to publications.
+# Map the `abbr` field of a BibTeX entry to a URL and/or badge color.
+# Example:
+# "PRL":
+#   url: https://journals.aps.org/prl/
+#   color: "#c41230"
