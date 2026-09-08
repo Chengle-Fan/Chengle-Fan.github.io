@@ -13,8 +13,8 @@ announcements:
     <p class="eyebrow">Metamaterials · Topological Photonics · Light-Matter Interaction</p>
     <h1 id="intro-title">Chengle Fan</h1>
     <p class="intro-role">Undergraduate researcher at <a href="https://sustech.edu.cn/en/">SUSTech</a></p>
-    <p class="intro-lead">I study how engineered photonic structures control the propagation of light.</p>
-    <p>My work connects topological band theory, full-wave simulation, and microwave experiments, with a focus on nonreciprocal transport and synthetic gauge fields.</p>
+    <p class="intro-lead">I study how artificial photonic structures control the flow of light.</p>
+    <p>My research combines theoretical modeling, full-wave simulations, and microwave experiments to explore topological phenomena, nonreciprocal wave transport, and synthetic gauge fields in photonic systems.</p>
     <div class="action-links">
       <a class="button-primary" href="{{ '/projects/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
     </div>
