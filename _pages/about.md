@@ -80,6 +80,6 @@ announcements:
 </section>
 
 <div class="contact-strip">
-  <div><h2>Get in touch</h2><p>I welcome research discussions and opportunities to collaborate.</p></div>
+  <div><h2>Get in touch</h2><p>I am interested in graduate research opportunities in photonics and related areas.</p></div>
   <a href="mailto:{{ site.data.socials.email }}">Email me <span aria-hidden="true">↗</span></a>
 </div>
