@@ -2,7 +2,7 @@
 layout: research
 title: Pseudospin-Locked Chiral Edge States in a Gyromagnetic Photonic Crystal
 description: Microwave realization of an edge state that is simultaneously nonreciprocal and pseudospin-selective (manuscript in preparation)
-img: assets/img/projects/gyromagnetic_phc/hero_experiment.jpeg
+img: assets/img/projects/gyromagnetic_phc/concept.jpeg
 importance: 1
 category: research
 short_title: "Pseudospin-locked chiral edge states"
@@ -11,7 +11,6 @@ role: "Full-wave modeling & sample design"
 status: "Manuscript in preparation"
 summary: "Combining one-way edge transport with pseudospin-selective excitation, with microwave experiments and photonic routing devices."
 ---
-
 **Context:** Undergraduate research assistant, Topological Physics Research Group (Prof. Zhen Gao), Department of EEE, SUSTech. A manuscript based on this work is in preparation.
 
 Photonic quantum spin Hall (QSH) systems support pseudospin-locked *helical* edge states, but their reciprocal nature allows backscattering through pseudospin flipping at generic defects. Photonic quantum anomalous Hall (QAH) systems support nonreciprocal *chiral* edge states, but a conventional chiral channel does not carry an independently addressable pseudospin degree of freedom. This project realizes an edge state that is **simultaneously nonreciprocal and pseudospin-selective**.

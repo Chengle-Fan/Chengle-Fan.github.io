@@ -2,7 +2,7 @@
 layout: research
 title: Gauge-Field-Induced Duality and Self-Dual Photonic Crystals
 description: Translating hopping-sign patterns and gauge flux into dual and self-dual photonic-crystal Hamiltonians, from tight-binding models to full-wave verification
-img: assets/img/projects/gauge_duality/self_duality_lattices.png
+img: assets/img/projects/gauge_duality/duality_schematic.png
 importance: 2
 category: research
 short_title: "Gauge-field-induced duality"
@@ -11,7 +11,6 @@ role: "Tight-binding & full-wave modeling"
 status: "Numerical research"
 summary: "Engineering coupling signs and gauge flux to realize dual and self-dual photonic lattices, and exploring Hofstadter-type spectra."
 ---
-
 **Context:** Undergraduate research assistant, Topological Physics Research Group (Prof. Zhen Gao), Department of EEE, SUSTech.
 
 Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian configurations in parameter space: lattices with different hopping-sign patterns can share the same spectrum under a duality transformation, while a *self-dual* configuration maps onto itself and hosts characteristic degeneracy features. The central challenge of this project was not only to construct dual tight-binding models, but to **implement their coupling signs and gauge fluxes in realistic electromagnetic structures**.
