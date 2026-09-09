@@ -7,11 +7,11 @@ importance: 3
 category: research
 short_title: "Terahertz chiral valley edge states"
 platform: "Terahertz photonic crystals"
-role: "Visiting researcher · NTU"
+role: "Visiting Research Student · NTU"
 status: "Numerically validated design"
 summary: "Designing a Chern–valley interface around 0.14 THz, with 3D simulations that account for fabrication tolerances and air layers."
 ---
-**Context:** Visiting research student, School of Physical and Mathematical Sciences, Nanyang Technological University (NTU), Singapore, with Prof. Baile Zhang (Jan–Apr 2026).
+**Context:** Visiting Research Student, School of Physical and Mathematical Sciences, Nanyang Technological University (NTU), Singapore, with Prof. Baile Zhang (Jan–Apr 2026).
 
 During my visit to NTU, I worked on transferring a chiral valley edge-state mechanism from the microwave regime to a **fabrication-compatible THz platform**, with the long-term goal of moving topological wave transport toward compact, chip-compatible implementations. The concept relies on Dirac mass engineering at a hybrid Chern photonic crystal (CPC) – valley photonic crystal (VPC) interface, where valley-dependent and chiral transport can coexist.
 
@@ -34,6 +34,18 @@ During my visit to NTU, I worked on transferring a chiral valley edge-state mech
 </div>
 <div class="caption">
     Projected band structures of the CPC–VPC interface: 2D eigenfrequency approximation (left) versus full 3D YIG–PEC model (right). The overlapping topological gap supports interface-localized chiral valley edge states near 138–141 GHz.
+</div>
+
+## Mode localization in an earlier design
+
+<!-- Figure source: PPT_Research_experience_Chengle_Fan.pdf, p. 35. The author confirmed that this figure shows an earlier design, not the latest geometry. -->
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/thz_valley/early_design_bands_modes.png" title="Earlier-design bands and mode profiles" alt="Earlier THz interface design: projected bands, a magnified spectral region, and three corresponding field profiles identified by triangle and star markers" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Projected bands and selected eigenmode field profiles for an earlier CPC–VPC interface design. The enlarged spectral region links the marked states to the three field profiles on the right; the star-marked state is localized near the interface. This figure documents an earlier design iteration; its geometry and frequencies differ from the latest optimized design.
 </div>
 
 ## Fabrication-aware optimization
