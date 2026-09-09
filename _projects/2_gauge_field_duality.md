@@ -16,6 +16,7 @@ summary: "Engineering coupling signs and gauge flux to realize dual and self-dua
 Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian configurations in parameter space: lattices with different hopping-sign patterns can share the same spectrum under a duality transformation, while a *self-dual* configuration maps onto itself and hosts characteristic degeneracy features. The central challenge of this project was not only to construct dual tight-binding models, but to **implement their coupling signs and gauge fluxes in realistic electromagnetic structures**.
 
 <!-- Original schematic confirmed by the author; exported from PPT_Research_experience_Chengle_Fan.pdf, p. 11. The citation below is theoretical background, not an image credit. -->
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/gauge_duality/symmetry_duality_concept.png" title="Symmetry and duality" alt="Comparison of conventional symmetry, projective symmetry, and duality transformations, with positive and negative hopping amplitudes and zero or pi gauge flux" class="img-fluid rounded z-depth-1" %}
@@ -28,13 +29,14 @@ Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian con
 ## Photonic-crystal implementation
 
 <!-- Figure source: Chengle Fan, PPT_Research_experience_Chengle_Fan.pdf, p. 17; corresponding content in Duality+Butterfly.pptx, slide 3. Cropped to remove slide chrome only. -->
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gauge_duality/cmr_photonic_design.png" title="CMR photonic-crystal design" alt="CMR photonic-crystal design with dielectric elements, PEC boundaries, mode phases, and three coupling-sign configurations" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gauge_duality/cmr_photonic_design.png" title="CMR photonic-crystal design" alt="CMR photonic-crystal design with dielectric elements, PEC rods, mode phases, and three coupling-sign configurations" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    CMR photonic-crystal design with dielectric elements and perfect-electric-conductor (PEC) boundaries. The mode-phase sketches illustrate how element orientation controls the coupling-sign patterns for the dual and self-dual configurations.
+    CMR photonic-crystal design with dielectric elements and perfect-electric-conductor (PEC) rods（cross-shaped）. The mode-phase sketches illustrate how element orientation controls the coupling-sign patterns for the dual and self-dual configurations.
 </div>
 
 ## My contributions
@@ -46,6 +48,7 @@ Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian con
 - Explored field-gradient-driven wave-packet dynamics related to non-Abelian Bloch oscillations in the self-dual platform, identifying practical limitations from small gaps, imperfect degeneracy, and possible Zener tunneling.
 
 <!-- Figure source: Chengle Fan, PPT_Research_experience_Chengle_Fan.pdf, p. 18; corresponding content in Duality+Butterfly.pptx, slide 4. Cropped to remove slide chrome only. -->
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/gauge_duality/photonic_duality_simulations.png" title="Photonic duality simulations" alt="Comparison of dual lattices A and B and a self-dual lattice, showing tight-binding patterns, photonic-crystal geometries, COMSOL bands in GHz, and FFT spectra" class="img-fluid rounded z-depth-1" %}
