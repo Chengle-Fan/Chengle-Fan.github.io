@@ -1,7 +1,7 @@
 # 个人学术网站：套瓷前修改意见
 
-核查日期：2026-09-09  
-网站：https://chengle-fan.github.io/  
+核查日期：2026-09-09
+网站：https://chengle-fan.github.io/
 用途：交给执行 agent，完成发送套瓷邮件前的内容修改与最终验收。
 
 ## 1. 总体判断与核查边界
@@ -42,15 +42,15 @@ This project is an ongoing numerical study. I am checking how the spatial and te
 
 仅替换末尾两段还不够，前文有相同的内部记录语气：
 
-| 位置 | 修改要求 |
-|---|---|
-| `Context` 段 | 删除 `developing and auditing`、`making results traceable`、`rather than relying on a single solver` 等验收式表达。使用下方替换稿。 |
-| `What I am building` | 标题改为 `Numerical approach`。 |
-| `The current V3.1 MATLAB package connects four complementary views...` | 改为 `I use three numerical methods to connect Floquet band structure with pulse dynamics: plane-wave expansion, temporal transfer matrices, and FDTD simulations.` 后接现有方法说明，避免重复。 |
-| `per-(k) Gaussian-wavepacket simulations` | 改为 `Gaussian wave-packet simulations with different central wavevectors`，避免公式标记问题。 |
-| `Shared numerical kernels...stale copies of the solvers` | 从学术介绍正文移除；若保留，放入代码仓库文档。 |
-| `My role: Numerical modeling & scientific validation` | 简化为 `Numerical modeling`。 |
-| 图注中的 `Generated from the current V3.1 code in September 2026` | 从图注移除；版本与生成日期可留在代码或图片元数据中。 |
+| 位置                                                                     | 修改要求                                                                                                                                                                                          |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Context` 段                                                           | 删除`developing and auditing`、`making results traceable`、`rather than relying on a single solver` 等验收式表达。使用下方替换稿。                                                          |
+| `What I am building`                                                   | 标题改为`Numerical approach`。                                                                                                                                                                  |
+| `The current V3.1 MATLAB package connects four complementary views...` | 改为`I use three numerical methods to connect Floquet band structure with pulse dynamics: plane-wave expansion, temporal transfer matrices, and FDTD simulations.` 后接现有方法说明，避免重复。 |
+| `per-(k) Gaussian-wavepacket simulations`                              | 改为`Gaussian wave-packet simulations with different central wavevectors`，避免公式标记问题。                                                                                                   |
+| `Shared numerical kernels...stale copies of the solvers`               | 从学术介绍正文移除；若保留，放入代码仓库文档。                                                                                                                                                    |
+| `My role: Numerical modeling & scientific validation`                  | 简化为`Numerical modeling`。                                                                                                                                                                    |
+| 图注中的`Generated from the current V3.1 code in September 2026`       | 从图注移除；版本与生成日期可留在代码或图片元数据中。                                                                                                                                              |
 
 `Context` 后的介绍可替换为：
 
@@ -83,21 +83,7 @@ Modeling Floquet bands and pulse dynamics in photonic time crystals using plane-
 
 ## 3. P1：建议发送前完成
 
-### P1-1 增加可下载的 CV
-
-页面：https://chengle-fan.github.io/cv/
-
-当前 CV 页面是网页简历，没有发现 PDF 下载链接，也没有 PDF 嵌入入口。建议：
-
-- 在 CV 页顶部增加明确的 `Download CV (PDF)` 按钮。
-- 首页介绍区域增加一个次要的 `CV (PDF)` 链接，与研究入口并列。
-- 优先使用本人确认的最新 PDF；文件名建议为 `Chengle_Fan_CV.pdf`。
-- 比对 PDF 与网页中的毕业时间、访学日期、GPA、排名、TOEFL 和论文状态。
-- 确保链接无需登录，指向真正的 PDF，下载后可正常打开。
-
-如果执行环境没有最新 PDF，应先报告这一项待补充，不要连接旧版本或制作空占位文件。
-
-### P1-2 按研究成熟度调整展示顺序
+### P1-1 按研究成熟度调整展示顺序
 
 页面：首页与 https://chengle-fan.github.io/projects/
 
@@ -115,7 +101,7 @@ Modeling Floquet bands and pulse dynamics in photonic time crystals using plane-
 
 排序应通过项目元数据或模板完成，尽量保留已有项目 URL，避免已有邮件或收藏中的链接失效。
 
-### P1-3 修正两类不自然的角色与图注表述
+### P1-2 修正两类不自然的角色与图注表述
 
 **手性边缘态项目：**
 
@@ -221,7 +207,6 @@ FDTD simulations of pulse propagation in a photonic time crystal using the param
 - [ ] 首页、Research 列表和项目详情中的同一项目摘要与角色称谓一致。
 - [ ] 公式实际渲染正常，没有裸露的 LaTeX 命令或 `per-(k)`。
 - [ ] 成熟项目处于醒目位置，原有项目链接继续有效。
-- [ ] CV PDF 有明确入口，内容经核对且能直接下载打开；若缺少源文件，明确记录待补项。
 - [ ] 稿件仍标记为准备中，没有擅自升级成果状态或个人贡献。
 - [ ] 电脑宽度约 1440 px、手机宽度约 390 px 下，首页、Research、CV 和时间晶体详情无横向溢出、标题遮挡、文字重叠或邮箱越界。
 - [ ] 手机菜单能展开、关闭并完成导航；深浅色模式下文字与科研图注可读。
@@ -231,4 +216,4 @@ FDTD simulations of pulse propagation in a photonic time crystal using the param
 
 ## 8. 推荐执行顺序
 
-先处理 P0 的时间晶体文案与公式，再处理 P1 的 CV 入口、项目顺序和明显措辞问题，最后做浏览器验收。P2 作为顺手优化，不必扩大成全站重新设计。
+先处理 P0 的时间晶体文案与公式，再处理 P1 的项目顺序和明显措辞问题，最后做浏览器验收。P2 作为顺手优化，不必扩大成全站重新设计。
