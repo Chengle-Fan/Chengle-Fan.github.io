@@ -15,13 +15,26 @@ summary: "Engineering coupling signs and gauge flux to realize dual and self-dua
 
 Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian configurations in parameter space: lattices with different hopping-sign patterns can share the same spectrum under a duality transformation, while a *self-dual* configuration maps onto itself and hosts characteristic degeneracy features. The central challenge of this project was not only to construct dual tight-binding models, but to **implement their coupling signs and gauge fluxes in realistic electromagnetic structures**.
 
+<!-- Original schematic confirmed by the author; exported from PPT_Research_experience_Chengle_Fan.pdf, p. 11. The citation below is theoretical background, not an image credit. -->
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/gauge_duality/self_duality_lattices.png" title="self-duality" alt="Dual and self-dual photonic lattice geometries and their coupling-sign patterns" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/gauge_duality/symmetry_duality_concept.png" title="Symmetry and duality" alt="Comparison of conventional symmetry, projective symmetry, and duality transformations, with positive and negative hopping amplitudes and zero or pi gauge flux" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Photonic-crystal realizations of dual lattice pairs and the self-dual configuration. The duality operation exchanges intra- and inter-cell couplings; insets show the corresponding tight-binding hopping patterns and gauge flux per plaquette.
+    Conventional symmetry, projective symmetry, and duality transformations. Solid and dashed bonds denote hopping amplitudes t and −t; plaquette labels indicate the gauge flux. For the Hamiltonian-family formulation of duality, see <a href="https://doi.org/10.1103/PhysRevResearch.5.023099">Fruchart, Yao, and Vitelli, Physical Review Research 5, 023099 (2023)</a>.
+</div>
+
+## Photonic-crystal implementation
+
+<!-- Figure source: Chengle Fan, PPT_Research_experience_Chengle_Fan.pdf, p. 17; corresponding content in Duality+Butterfly.pptx, slide 3. Cropped to remove slide chrome only. -->
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/gauge_duality/cmr_photonic_design.png" title="CMR photonic-crystal design" alt="CMR photonic-crystal design with dielectric elements, PEC boundaries, mode phases, and three coupling-sign configurations" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    CMR photonic-crystal design with dielectric elements and perfect-electric-conductor (PEC) boundaries. The mode-phase sketches illustrate how element orientation controls the coupling-sign patterns for the dual and self-dual configurations.
 </div>
 
 ## My contributions
@@ -32,13 +45,14 @@ Unlike ordinary spatial symmetry, **duality** connects different Hamiltonian con
 - Used FFT-based spectral reconstruction to compare finite-sample field simulations with momentum-space band predictions.
 - Explored field-gradient-driven wave-packet dynamics related to non-Abelian Bloch oscillations in the self-dual platform, identifying practical limitations from small gaps, imperfect degeneracy, and possible Zener tunneling.
 
+<!-- Figure source: Chengle Fan, PPT_Research_experience_Chengle_Fan.pdf, p. 18; corresponding content in Duality+Butterfly.pptx, slide 4. Cropped to remove slide chrome only. -->
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/gauge_duality/duality_bands.png" title="duality bands" alt="Fourier-reconstructed dispersion spectra compared with tight-binding band predictions" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/gauge_duality/photonic_duality_simulations.png" title="Photonic duality simulations" alt="Comparison of dual lattices A and B and a self-dual lattice, showing tight-binding patterns, photonic-crystal geometries, COMSOL bands in GHz, and FFT spectra" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Fourier-reconstructed spectra of finite samples overlaid with tight-binding bands: the two 0-flux dual structures (d, f) share the same spectrum, while the self-dual π-flux structure (e) exhibits the expected degeneracy at the M point.
+    Numerical comparison of dual lattice A, dual lattice B, and the self-dual lattice (top to bottom). Columns show the tight-binding coupling patterns, photonic-crystal designs, full-wave bands in GHz, and FFT-reconstructed spectra. The two 0-flux configurations have similar band dispersions, while the π-flux configuration shows approximately paired bands.
 </div>
 
 ## Hofstadter-type spectral engineering
