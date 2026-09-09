@@ -10,7 +10,7 @@ layout: page
 <div class="research-article">{{ content }}</div>
 <nav class="project-next" aria-label="More research">
   <h2>Explore more research</h2>
-  {% assign projects = site.projects | sort: 'importance' %}
+  {% assign projects = site.projects | where_exp: "project", "project.listed != false" | sort: 'importance' %}
   {% for project in projects %}
     {% unless project.url == page.url %}<a href="{{ project.url | relative_url }}">{{ project.short_title }} <span aria-hidden="true">↗</span></a>{% endunless %}
   {% endfor %}

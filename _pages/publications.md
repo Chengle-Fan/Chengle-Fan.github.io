@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-<p class="publication-note">The work listed below is ongoing. The manuscript is in preparation and has not been submitted for publication.</p>
+<p class="publication-note">The manuscript listed below is in preparation and has not been submitted for publication.</p>
 
 {% include bib_search.liquid %}
 

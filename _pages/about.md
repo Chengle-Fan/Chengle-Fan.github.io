@@ -49,7 +49,7 @@ announcements:
 <section class="home-section" aria-labelledby="research-heading">
   <div class="section-heading"><h2 id="research-heading">Selected research</h2><a href="{{ '/projects/' | relative_url }}">All projects <span aria-hidden="true">↗</span></a></div>
   <div class="featured-research">
-    {% assign featured = site.projects | sort: 'importance' %}
+    {% assign featured = site.projects | where_exp: "project", "project.listed != false" | sort: 'importance' %}
     {% for project in featured limit: 3 %}
     <article class="research-preview">
       <a class="research-image" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">

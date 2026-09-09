@@ -3,11 +3,11 @@ layout: research
 title: Pseudospin-Locked Chiral Edge States in a Gyromagnetic Photonic Crystal
 description: Microwave realization of an edge state that is simultaneously nonreciprocal and pseudospin-selective (manuscript in preparation)
 img: assets/img/projects/gyromagnetic_phc/concept.jpeg
-importance: 1
+importance: 0
 category: research
 short_title: "Pseudospin-locked chiral edge states"
 platform: "Microwave photonic crystals"
-role: "Full-wave modeling & sample design and experiment"
+role: "Full-wave modeling, sample design, and experimental characterization"
 status: "Manuscript in preparation"
 summary: "Combining one-way edge transport with pseudospin-selective excitation, with microwave experiments and photonic routing devices."
 ---

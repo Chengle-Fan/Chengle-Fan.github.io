@@ -3,7 +3,7 @@ layout: research
 title: Terahertz Chiral Valley Edge States via Dirac Mass Engineering
 description: Transferring a chiral valley edge-state mechanism from microwave to a fabrication-compatible THz platform (visiting research at NTU)
 img: assets/img/projects/thz_valley/3D.png
-importance: 3
+importance: 1
 category: research
 short_title: "Terahertz chiral valley edge states"
 platform: "Terahertz photonic crystals"

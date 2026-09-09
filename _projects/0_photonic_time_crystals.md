@@ -1,31 +1,30 @@
 ---
 layout: research
 title: Numerical Modeling of Photonic Time Crystals
-description: Ongoing research training in Floquet-band calculations, finite-sample time-domain simulation, and numerical cross-validation
+description: Numerical study of pulse propagation in photonic time crystals, connecting Floquet band calculations with time-domain simulations
 img: assets/img/projects/photonic_time_crystal/ptc_fdtd_fields.png
-importance: 0
+importance: 3
 category: research
 short_title: "Photonic time crystals"
 platform: "Time-varying photonics"
-role: "Numerical modeling & scientific validation"
+role: "Numerical modeling"
 status: "Ongoing research training"
-summary: "Developing a Base-MATLAB toolkit that connects Floquet band theory with finite-pulse simulations and probe-based spectral reconstruction."
+summary: "Modeling Floquet bands and pulse dynamics in photonic time crystals using plane-wave expansion, temporal transfer matrices, and FDTD simulations."
 ---
 
-**Context:** Ongoing research training in time-varying photonics. I am developing and auditing a one-dimensional numerical toolkit for photonic time crystals, with a focus on making results traceable across independent methods rather than relying on a single solver.
+**Context:** Ongoing research training in time-varying photonics. I am studying pulse propagation in photonic time crystals through numerical modeling. This work connects Floquet band calculations with time-domain simulations of pulse splitting and amplification.
 
 A photonic time crystal is spatially uniform but periodically modulated in time. Spatial momentum remains conserved, while the temporal periodicity produces a Floquet quasifrequency spectrum. Momentum gaps can contain complex-conjugate quasifrequency branches, so a finite pulse can be amplified or attenuated instead of simply propagating through an ordinary frequency band gap.
 
-## What I am building
+## Numerical approach
 
-The current **V3.1 MATLAB package** connects four complementary views of the same system:
+I use three numerical methods to connect Floquet band structure with pulse dynamics: plane-wave expansion, temporal transfer matrices, and FDTD simulations.
 
 - plane-wave expansion (PWE) for the full Floquet spectrum;
-- exact temporal transfer matrices (TMM) for two-step modulation and independent band checks;
-- a finite-sample D/B-Yee FDTD solver for field evolution through temporal interfaces; and
-- per-\(k\) Gaussian-wavepacket simulations with fixed probes and FFT folding into the first temporal Floquet zone.
+- exact temporal transfer matrices (TMM) for two-step modulation and independent band checks; and
+- a finite-sample D/B-Yee FDTD solver for field evolution through temporal interfaces.
 
-The package also contains a transmission-line analogue and paper-reproduction layers. Shared numerical kernels are resolved and checked explicitly, so the reproduction scripts cannot silently call stale copies of the solvers.
+With the FDTD solver I also run Gaussian wave-packet simulations with different central wavevectors, recording fields at fixed probes and folding the spectra by FFT into the first temporal Floquet zone. The code also includes a transmission-line analogue and reproductions of published results.
 
 ## Selected numerical results
 
@@ -35,7 +34,7 @@ The package also contains a transmission-line analogue and paper-reproduction la
     </div>
 </div>
 <div class="caption">
-    Finite-pulse FDTD calculation using the parameters of Lustig, Sharabi, and Segev (2018). The 1.4 μm band-state pulse remains bounded and splits at the temporal interfaces, whereas the 0.93 μm momentum-gap pulse is strongly amplified while the modulation is active. The white bracket marks the 220–340 fs modulation window. Generated from the current V3.1 code in September 2026.
+    FDTD simulations of pulse propagation in a photonic time crystal using the parameters of Lustig et al. (2018). The incident pulses correspond to a pass band (1.4 μm) and a momentum gap (0.93 μm). White brackets mark the modulation interval, 220–340 fs. Color shows ln(|D|/D0); the two panels use different color scales.
 </div>
 
 <div class="row">
@@ -44,20 +43,16 @@ The package also contains a transmission-line analogue and paper-reproduction la
         <div class="caption">Exact two-layer TMM result. Blue curves are real-quasifrequency pass bands; gray regions mark momentum gaps with nonzero imaginary quasifrequency.</div>
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/photonic_time_crystal/ptc_fdtd_fft_bands.png" title="finite-sample FDTD FFT reconstruction" alt="Heat map of the first-zone quasifrequency response reconstructed from finite-sample Gaussian-wavepacket simulations and fixed probes" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Probe-based reconstruction from 101 independent finite-space Gaussian-wavepacket simulations, five fixed probes, and a 16-period analysis window. The horizontal coordinate is the source center \(k_c\), not an exact infinite-medium eigenvalue.</div>
+        {% include figure.liquid path="assets/img/projects/photonic_time_crystal/ptc_fdtd_fft_bands.png" title="finite-sample FDTD FFT reconstruction" alt="Heat map of the first-zone quasifrequency response reconstructed from finite-sample Gaussian wave-packet simulations and fixed probes" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">Probe-based reconstruction from 101 independent finite-space Gaussian wave-packet simulations, five fixed probes, and a 16-period analysis window. The horizontal coordinate is the source center $k_c$, not an exact infinite-medium eigenvalue.</div>
     </div>
 </div>
 
-## Current validation snapshot
+## Results and ongoing work
 
-The full package was rerun in MATLAB R2024b Update 6 before this page was added. All **8/8 package checks** and **12/12 transmission-line checks** passed, including analytic limits, PWE–TMM comparisons, temporal-interface continuity, finite-chain energy accounting, FFT folding, paper-reproduction smoke tests, and a repository-wide code analysis.
+Using the parameters of Lustig et al. (2018), I reproduced the contrasting dynamics of pulses in a pass band and a momentum gap. The pass-band pulse remains bounded and splits at temporal interfaces, while the momentum-gap pulse is amplified during modulation. I also compared spectra reconstructed from FDTD probe signals with the Floquet bands obtained from temporal transfer matrices. The reconstructed peaks follow the stable bands, and the pulse amplification is consistent with the transfer-matrix calculation.
 
-For the full 101-point photonic-time-crystal reconstruction, 137 strong stable-band peaks were matched to the Yee-corrected TMM reference. The median and 90th-percentile quasifrequency differences were \(0.00565\,\Omega\) and \(0.03466\,\Omega\), respectively. For the 60-period momentum-gap pulse, FDTD gave \(\ln(\mathrm{gain})=29.793\), compared with \(29.873\) from the exact TMM calculation.
-
-## Scope and next steps
-
-These results are a **numerical reproduction and solver-validation study**, not yet a claim of experimental realization. The field plot uses explicit grid and boundary assumptions because the reference paper does not report every FDTD setting. The probe spectrum measures a finite-source, finite-sample, finite-window response; its linewidth is therefore not used to infer the bulk imaginary quasifrequency. Ongoing work includes convergence studies, stronger topology diagnostics, and calibration of the transmission-line model against measured component and scattering data.
+This project is an ongoing numerical study. I am checking how the spatial and temporal resolution affect these results, and plan to investigate the topology of the Floquet bands and refine the transmission-line model using measured component parameters.
 
 ## References
 

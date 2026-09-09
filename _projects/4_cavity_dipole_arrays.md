@@ -35,14 +35,14 @@ My main contribution is **experimental characterization and data processing**: v
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/cavity_dipole/exp_fft.png" title="experimental FFT dispersion" alt="Dispersion spectrum reconstructed by spatial Fourier transform of measured near fields" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Experimental dispersion reconstructed from measured near fields, for the setting labeled L<sub>z</sub> = 0.3a in the research presentation.</div>
+        <div class="caption">Experimental dispersion reconstructed from near-field measurements at L<sub>z</sub> = 0.3a.</div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/cavity_dipole/field_sim.png" title="simulated field distribution" alt="Simulated electromagnetic field distribution of a cavity-controlled dipole-array mode" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Simulated field distribution for the setting labeled L<sub>z</sub> = 0.333a in the research presentation. This is a different cavity-height setting from the experimental spectrum shown alongside it.</div>
+        <div class="caption">Simulated field distribution at L<sub>z</sub> = 0.333a — a different cavity-height setting from the experimental spectrum alongside it.</div>
     </div>
 </div>
-This collaboration develops my experience in microwave measurements and dispersion reconstruction for systems whose response depends on both the resonator array and its surrounding cavity.
+The immediate goal is to map how interface-mode confinement responds as the cavity height tunes the effective interactions between the dipolar modes.
 
 ## Related background
 

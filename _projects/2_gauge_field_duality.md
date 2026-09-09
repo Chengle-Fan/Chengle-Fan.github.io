@@ -68,4 +68,4 @@ As an extension, I engineered rotation-dependent effective couplings of higher-o
     Hofstadter-butterfly-like spectrum of a coupling-modulated photonic lattice as a function of the modulation (Harper/AAH) frequency.
 </div>
 
-This project trained me to connect Hamiltonian-level design with realistic photonic implementation — how abstract concepts such as gauge flux, coupling sign, duality, and dimerization appear as measurable photonic signatures, including band degeneracies, edge modes, and corner modes.
+An open question from this work is whether the self-dual platform's gaps can be enlarged enough to observe clean non-Abelian Bloch oscillations before Zener tunneling sets in.

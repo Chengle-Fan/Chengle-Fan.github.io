@@ -32,6 +32,7 @@ related_posts: false
    - `platform` / `role` / `status`：研究平台、个人贡献、当前进展
    - `layout: research`：使用统一的项目详情排版
    - `importance`：排序权重，数字越小越靠前；首页自动展示前三个项目
+   - `listed: false`：可选；保留项目详情页 URL，但从首页精选、Research 列表和详情页底部导航中隐藏（当前用于 `_projects/5_funded_3d_pti.md` 资助页）
    - `category: research`：保持不变
 3. 正文用 Markdown 写，插图用：
    ```

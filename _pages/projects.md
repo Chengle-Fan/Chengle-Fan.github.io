@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 <div class="research-index">
-{% assign sorted_projects = site.projects | sort: 'importance' %}
+{% assign sorted_projects = site.projects | where_exp: "project", "project.listed != false" | sort: 'importance' %}
 {% for project in sorted_projects %}
 <article class="research-row{% unless project.img %} research-row-text{% endunless %}">
   {% if project.img %}
