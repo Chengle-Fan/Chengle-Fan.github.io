@@ -3,7 +3,7 @@ layout: research
 title: Numerical Modeling of Photonic Time Crystals
 description: Numerical study of pulse propagation in photonic time crystals, connecting Floquet band calculations with time-domain simulations
 img: assets/img/projects/photonic_time_crystal/ptc_fdtd_fields.png
-importance: 3
+importance: 2
 category: research
 short_title: "Photonic time crystals"
 platform: "Time-varying photonics"

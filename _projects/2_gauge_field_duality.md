@@ -3,7 +3,7 @@ layout: research
 title: Gauge-Field-Induced Duality and Self-Dual Photonic Crystals
 description: Translating hopping-sign patterns and gauge flux into dual and self-dual photonic-crystal Hamiltonians, from tight-binding models to full-wave verification
 img: assets/img/projects/gauge_duality/duality_schematic.png
-importance: 2
+importance: 3
 category: research
 short_title: "Gauge-field-induced duality"
 platform: "Synthetic gauge fields"
