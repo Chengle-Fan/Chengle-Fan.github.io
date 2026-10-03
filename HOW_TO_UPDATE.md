@@ -41,13 +41,14 @@ related_posts: false
 
 ### 添加一篇论文/出版物
 
-编辑 `_bibliography/papers.bib`，追加一条 BibTeX 条目即可，Publications 页会自动按年份分组渲染；当前页面明确标注稿件仍在准备中且尚未投稿，投稿、接收或发表后需同步更新该说明与首页章节标题。常用可选字段：
+编辑 `_bibliography/papers.bib`，追加一条 BibTeX 条目即可，Publications 页会自动按年份分组渲染；每条稿件的当前状态由 `note` 标注，投稿、接收或发表后需同步更新论文列表与网页版 CV。常用可选字段：
 
 - `selected = {true}`：让该文出现在首页 "selected publications"
 - `preview = {fig.jpeg}`：配图（放在 `assets/img/publication_preview/` 下的相对路径）
 - `abbr = {PRL}`：期刊缩写徽章（配色在 `_data/venues.yml` 里定义）
 - `pdf = {...}` / `arxiv = {...}` / `html = {...}`：生成对应链接按钮
 - 想让合作者名字变成链接：编辑 `_data/coauthors.yml`
+- 共一作者：在 BibTeX 姓氏后加 `*`，例如 `Fan*, Chengle and Shi*, Kaizhou`。主题会显示上标，Publications 页说明 `*` 表示同等贡献；在 `note` 中写明 Chengle 的共一作者排序，并与 CV 保持一致。
 
 ### 更新 CV
 
@@ -95,4 +96,5 @@ related_posts: false
 - 科研封面使用现有 ImageMagick 管线生成的 WebP 响应式版本，原始图保留供详情页使用。
 - 投稿、接收、正式发表需要分别更新，不要把 `Manuscript in preparation` 写成已投稿或已发表论文。
 - `_layouts/cv.liquid`：有意覆盖主题 CV 布局，继续读取 `_data/cv.yml`。主题 1.0.2 的 CV 渲染器仅识别少数固定节名，原有 Research Experience、Research Grant、Leadership and Activities 的内容及教育 score 会被静默遗漏；本站布局按字段渲染这些内容，不再提供 PDF 下载，并保留章节目录。
+- `assets/js/theme.js`：有意覆盖 `al_folio_core` 1.0.15 的同路径脚本，保留高亮、图表、搜索等主题联动。默认跟随系统，按钮按当前实际显示的模式单击切换到相反模式，明确选择的明暗偏好在换页或刷新后保留。`assets/css/main.scss` 中的图标规则按实际明暗显示太阳／月亮，不显示系统模式的半日半月图标。升级主题时需核对上游脚本并保留这一切换策略。
 - 模板残留 `_pages/plugins.md` 已从构建排除，避免插件介绍混入学术网站。

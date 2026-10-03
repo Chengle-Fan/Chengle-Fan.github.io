@@ -74,7 +74,7 @@ announcements:
 </section>
 
 <section class="home-section" aria-labelledby="manuscript-heading">
-  <div class="section-heading"><h2 id="manuscript-heading">Manuscript in preparation</h2><a href="{{ '/publications/' | relative_url }}">Manuscript details <span aria-hidden="true">↗</span></a></div>
+  <div class="section-heading"><h2 id="manuscript-heading">Manuscripts</h2><a href="{{ '/publications/' | relative_url }}">Manuscript details <span aria-hidden="true">↗</span></a></div>
   <div class="publications">{% bibliography --query @*[selected=true] %}</div>
 </section>
 

@@ -190,6 +190,7 @@ kramdown:
 include: ["_pages"]
 exclude:
   - AGENTS.md
+  - academic-website-final-review-2026-09-09.md
   - _pages/plugins.md
   - HOW_TO_UPDATE.md
   - al-folio-upgrade-report.md

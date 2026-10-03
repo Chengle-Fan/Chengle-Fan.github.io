@@ -2,12 +2,12 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Ongoing research and manuscripts in preparation by Chengle Fan.
+description: Research manuscripts and author contributions by Chengle Fan.
 nav: true
 nav_order: 3
 ---
 
-<p class="publication-note">The manuscript listed below is in preparation and has not been submitted for publication.</p>
+<p class="publication-note">Both manuscripts are in preparation. * Equal contribution (co-first authors); † corresponding authors.</p>
 
 {% include bib_search.liquid %}
 
@@ -15,4 +15,4 @@ nav_order: 3
 {% bibliography %}
 </div>
 
-<a class="text-link" href="{{ '/projects/1_pseudospin_locked_chiral_edge/' | relative_url }}">Explore the related research and experimental results <span aria-hidden="true">↗</span></a>
+<p>Related research: <a href="{{ '/projects/1_pseudospin_locked_chiral_edge/' | relative_url }}">Pseudospin-locked chiral edge states</a> · <a href="{{ '/projects/4_mdec/' | relative_url }}">MDEC and cavity-controlled refraction</a></p>

@@ -119,6 +119,16 @@ body > .container[role="main"] { padding-inline: 2rem; margin-top: 3.25rem !impo
 #light-toggle:active {
   box-shadow: inset 0 1px 0 var(--glass-highlight);
 }
+// Show the actual appearance, including when the theme follows the system.
+html[data-theme] #light-toggle-system { display: none; }
+html[data-theme="light"] {
+  #light-toggle-light { display: inline-block; }
+  #light-toggle-dark { display: none; }
+}
+html[data-theme="dark"] {
+  #light-toggle-light { display: none; }
+  #light-toggle-dark { display: inline-block; }
+}
 @media (min-width: 576px) {
   #light-toggle { transform: translateY(10px); }
   #light-toggle:hover { transform: translateY(10px) scale(1.03); }

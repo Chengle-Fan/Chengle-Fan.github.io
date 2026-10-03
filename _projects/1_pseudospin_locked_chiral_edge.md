@@ -11,7 +11,7 @@ role: "Full-wave modeling, sample design, and experimental characterization"
 status: "Manuscript in preparation"
 summary: "Combining one-way edge transport with pseudospin-selective excitation, with microwave experiments and photonic routing devices."
 ---
-**Context:** Undergraduate research assistant, Topological Physics Research Group (Prof. Zhen Gao), Department of EEE, SUSTech. A manuscript based on this work is in preparation.
+**Context:** Undergraduate research assistant, Topological Physics Research Group (Prof. Zhen Gao), Department of EEE, SUSTech. A manuscript based on this work is in preparation. I am the **first-listed co-first author**, sharing equal contribution with **Kaizhou Shi**.
 
 Photonic quantum spin Hall (QSH) systems support pseudospin-locked *helical* edge states, but their reciprocal nature allows backscattering through pseudospin flipping at generic defects. Photonic quantum anomalous Hall (QAH) systems support nonreciprocal *chiral* edge states, but a conventional chiral channel does not carry an independently addressable pseudospin degree of freedom. This project realizes an edge state that is **simultaneously nonreciprocal and pseudospin-selective**.
 
