@@ -36,7 +36,7 @@ I **participated in experimental pseudospin measurements**. These sublattice-res
 
 Building on the same platform, I am exploring **cavity-height-controlled refractive behavior**. I use MATLAB to analyze COMSOL-derived band structures, isofrequency contours, and phase matching at the air-metasurface interface, examining how the available refracted channels change with cavity height.
 
-The current focus is a candidate for switching between **single and dual refracted channels at the same frequency and incidence angle**. Existing band-data analysis predicts one inward channel at a cavity height of 3.3a and two at 0.8846a. This provides a starting point for a reconfigurable beam splitter. Validation of the eigenmodes, excitation by the same input polarization, energy-flow directions, and channel power is still in progress.
+The current focus is a candidate for switching between **single and dual refracted channels at the same frequency and incidence angle**. Existing band-data analysis predicts one inward channel in the subcritical regime and two in the critical regime. This provides a starting point for a reconfigurable beam splitter. Validation of the eigenmodes, excitation by the same input polarization, energy-flow directions, and channel power is still in progress.
 
 <!-- Figure provenance: results/refraction/three_height_fixed/optimized_two_height_pair.png accompanying the application exploration report updated 2026-10-01. -->
 <div class="row justify-content-sm-center">
