@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the Topological Physics Research Group (Prof. Zhen Gao) at SUSTech as an undergraduate research assistant.
+Joined Prof. Zhen Gao’s Artificial Microstructure Physics Research Group at SUSTech as an undergraduate research assistant.

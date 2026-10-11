@@ -4,7 +4,10 @@ layout: page
 {% assign cv = site.data.cv.cv %}
 <div class="cv-intro">
   <p>{{ cv.summary }}</p>
-  <div class="action-links"><a class="button-secondary" href="mailto:{{ cv.email }}">Email me</a></div>
+  <div class="action-links">
+    {% if page.cv_pdf %}<a class="button-primary" href="{{ page.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open CV PDF in a new tab">Open CV (PDF) <span aria-hidden="true">↗</span></a>{% endif %}
+    <a class="button-secondary" href="mailto:{{ cv.email }}">Email me</a>
+  </div>
 </div>
 <div class="academic-cv">
 {% for section in cv.sections %}

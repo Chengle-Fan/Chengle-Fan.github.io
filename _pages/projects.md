@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /projects/
-description: Topological photonics and engineered wave transport, from theoretical models to experimental characterization.
+description: Research in photonic structures and wave control, spanning electromagnetic modeling, device design, and experimental characterization.
 nav: true
 nav_order: 2
 ---

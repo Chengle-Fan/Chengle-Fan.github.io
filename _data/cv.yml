@@ -6,7 +6,7 @@ cv:
   image: ""
   summary: >
     Undergraduate student at the Southern University of Science and Technology (SUSTech),
-    working on topological photonics, photonic crystals, metamaterials, and engineered wave systems.
+    with research experience in photonic structures, wave control, and reconfigurable photonic systems.
 
   sections:
     Education:
@@ -19,22 +19,27 @@ cv:
         end_date: 2027-06 (expected)
         score: "GPA: 3.85/4.00; Weighted Average: 92.45/100; Major Rank: 7/46"
         courses: "Fundamentals of Optics (98/100); Engineering Electromagnetics (90/100); Solid-State Electronics (97/100); Introduction to Semiconductor Optics (92/100); Liquid Crystal Optoelectronics (95/100); Introduction to Wide Bandgap Semiconductors (96/100)"
+      - institution: Nanyang Technological University (NTU)
+        location: Singapore
+        url: https://www.ntu.edu.sg/
+        studyType: Visiting Research Student (Non-Graduating)
+        start_date: "Jan. 12, 2026"
+        end_date: "Apr. 27, 2026"
 
     Research Interests:
-      - name: Artificial photonic structures and reconfigurable nanophotonics
+      - name: Nanophotonics and integrated photonic devices
         summary: >
-          Photonic crystals, metamaterials, and metasurfaces for engineering light-matter
-          interactions and wave propagation, with an emphasis on reconfigurable nanophotonics
-          for sensing, optical communications, signal processing, and photonic computing.
+          Controlling optical modes and light–matter interactions in structured media and
+          developing reconfigurable systems for optical information processing and sensing.
 
     Manuscripts in Preparation:
-      - title: Observation of pseudospin-locked chiral edge states in a gyromagnetic photonic crystal
+      - title: Experimental observation and routing of pseudospin-locked chiral edge states in a gyromagnetic photonic crystal
         authors:
           - Chengle Fan*
           - Kaizhou Shi*
           - Xiang Xi†
           - Zhen Gao†
-        publisher: "Manuscript in preparation; first-listed co-first author. * Equal contribution; † Corresponding authors."
+        publisher: "Manuscript in preparation. * Equal contribution; † Corresponding authors."
         releaseDate: 2026
       - title: Cavity-Tunable Dirac Phases in a Microwave Metasurface
         authors:
@@ -45,37 +50,47 @@ cv:
           - Yan Meng†
           - Baile Zhang†
           - Zhen Gao†
-        publisher: "Manuscript in preparation; third-listed co-first author. * Equal contribution; † Corresponding authors."
+        publisher: "Manuscript in preparation. * Equal contribution; † Corresponding authors."
+        releaseDate: 2026
+      - title: Cavity-tunable Orbital Band Inversion and Helical Edge Transport
+        authors:
+          - Minghui Niu*
+          - Yan Meng*
+          - Chengle Fan
+          - Xiaoyuan Jiao
+          - Jidong Song
+          - Gina Jinna Chen
+          - Perry Ping Shum
+          - Zhen Gao†
+          - Mengyao Li†
+        publisher: "Manuscript in preparation. * Equal contribution; † Corresponding authors."
         releaseDate: 2026
 
     Research Experience:
-      - company: School of Physical and Mathematical Sciences, Nanyang Technological University (NTU)
-        position: Visiting Research Student
-        location: Singapore
-        start_date: 2026-01
-        end_date: 2026-04
-        summary: "Supervisor: Prof. Baile Zhang. Terahertz chiral valley edge states in magneto-optic photonic crystals."
-        highlights:
-          - Designed and numerically validated a fabrication-compatible terahertz Chern-valley photonic-crystal interface supporting chiral, valley-selective edge modes.
-          - Built 2D and 3D COMSOL bulk-band and supercell models to identify overlapping topological gaps and interface-localized modes.
-          - Evaluated magnetic bias, fabrication tolerances, and finite air-layer effects, and optimized the structure for subsequent fabrication and experiments by NTU collaborators.
-
-      - company: Topological Physics Research Group, Department of EEE, SUSTech
+      - company: Artificial Microstructure Physics Research Group, SUSTech
         position: Undergraduate Research Assistant
         location: Shenzhen, China
         start_date: 2025-02
         end_date: present
-        summary: "Supervisor: Prof. Zhen Gao. Pseudospin-locked chiral edge states in gyromagnetic photonic crystals; gauge-field-induced duality and Hofstadter photonic lattices; cavity-tunable Dirac phases and ongoing refraction studies in a microwave metasurface."
+        summary: "Supervisor: Prof. Zhen Gao. Pseudospin-locked chiral edge states and photonic routing; cavity-controlled photonic systems; exploratory modeling of gauge-field photonic lattices."
         highlights:
-          - Led full-wave modeling and sample design for a microwave gyromagnetic photonic crystal supporting pseudospin-locked chiral edge transport under broken time-reversal symmetry.
-          - Identified QSH-like, QAH-like, and trivial phases through bulk and projected band structures, p-d band inversion, pseudospin-resolved eigenfields, and spin Chern numbers.
-          - Designed measurement configurations and participated in VNA transmission and near-field mapping; measurements showed ~20 dB directional transmission contrast within the bandgap and pseudospin-selective excitation of the chiral edge mode.
-          - Designed a pseudospin multiplexer/demultiplexer and a low-crosstalk waveguide crossing based on the coexistence of multiple topological phases.
-          - Developed tight-binding and full-wave models of gauge-flux-engineered dual and self-dual photonic crystals; verified spectral equivalence and self-duality-related degeneracies.
-          - Investigated rotation-dependent couplings between higher-order modes and Hofstadter-butterfly-like spectra through modulated hopping.
-          - Built finite-array models and MATLAB workflows for spectral analysis and Fourier-based reconstruction.
-          - Participated in sublattice-resolved VNA measurements of complex transmission in a cavity-embedded honeycomb metasurface, supporting reconstruction of pseudospin textures and characterization of Dirac-point winding numbers.
-          - Investigating cavity-controlled refraction using MATLAB and COMSOL band structures, equifrequency contours, and phase matching, including candidate single- and dual-channel responses at fixed frequency and incidence angle.
+          - Led full-wave modeling and sample design of a gyromagnetic photonic crystal; characterized its topological phases using band inversion, pseudospin-resolved eigenfields, and spin Chern numbers.
+          - Designed measurement configurations and participated in most VNA transmission and near-field experiments, demonstrating approximately 20 dB directional transmission contrast and pseudospin-selective edge-mode excitation within the bandgap.
+          - Designed a pseudospin multiplexer/demultiplexer and a low-crosstalk waveguide crossing; wrote the manuscript and prepared all figures.
+          - Contributed to sublattice-resolved VNA measurements of cavity-tunable Dirac phases, supporting pseudospin-texture reconstruction and winding-number characterization; co-first author on the manuscript.
+          - Investigating cavity-controlled refraction through MATLAB analysis of simulated bands, isofrequency contours, and interface phase matching, identifying candidate operating conditions for reconfigurable beam routing.
+          - Developed tight-binding and full-wave models to explore gauge-field-induced duality and Hofstadter-type spectra in photonic lattices.
+          - Contributed to experiments on cavity-controlled helical edge transport and to revision measurements for a study of cavity-tunable exceptional points.
+
+      - company: Nanyang Technological University (NTU)
+        position: Visiting Research Student
+        location: Singapore
+        start_date: "Jan. 12, 2026"
+        end_date: "Apr. 27, 2026"
+        summary: "Supervisor: Prof. Baile Zhang. Terahertz chiral valley edge states."
+        highlights:
+          - Developed 2D and 3D COMSOL models of terahertz Chern–valley interfaces to evaluate overlapping bulk bandgaps and interface-localized modes.
+          - Optimized a magneto-optic slab geometry while assessing magnetic bias, fabrication tolerances, and finite air-layer effects.
 
     Research Grant:
       - company: SUSTech Undergraduate Research Training Program
@@ -88,10 +103,10 @@ cv:
     Technical Skills:
       - name: Computational electromagnetics
         keywords: "COMSOL Multiphysics and FDTD in MATLAB"
-      - name: Band topology
+      - name: Band topology and numerical modeling
         keywords: "Tight-binding modeling and topological-invariant calculations"
       - name: Time-varying and spatiotemporal photonics
-        keywords: "MATLAB-based PWE/TMM band calculations and eigenfields; FDTD simulations of photonic time crystals and space-time-periodic media"
+        keywords: "MATLAB-based PWE/TMM band calculations, eigenfield reconstruction, and FDTD simulations for photonic time crystals and space–time-periodic media"
       - name: Experimental characterization
         keywords: "VNA transmission and near-field measurements, optical alignment, CCD imaging, polarization microscopy, liquid-crystal cell assembly, electro-optic characterization"
       - name: Programming and software
@@ -115,7 +130,7 @@ cv:
         awarder: Southern University of Science and Technology
 
     Leadership and Activities:
-      - company: Student Union, Department of EEE, SUSTech
+      - company: EEE Student Union, SUSTech
         position: Deputy Head, Activities Department
         start_date: 2024
         end_date: 2025

@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-<p class="publication-note">Both manuscripts are in preparation. * Equal contribution (co-first authors); † corresponding authors.</p>
+<p class="publication-note">The manuscripts below are in preparation. * Equal contribution (co-first authors); † corresponding authors.</p>
 
 {% include bib_search.liquid %}
 
@@ -15,4 +15,4 @@ nav_order: 3
 {% bibliography %}
 </div>
 
-<p>Related research: <a href="{{ '/projects/1_pseudospin_locked_chiral_edge/' | relative_url }}">Pseudospin-locked chiral edge states</a> · <a href="{{ '/projects/4_mdec/' | relative_url }}">MDEC and cavity-controlled refraction</a></p>
+<p>Related research: <a href="{{ '/projects/1_pseudospin_locked_chiral_edge/' | relative_url }}">Pseudospin-locked chiral edge states</a> · <a href="{{ '/projects/4_mdec/' | relative_url }}">Cavity-tunable Dirac phases and refraction</a></p>

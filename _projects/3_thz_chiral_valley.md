@@ -1,64 +1,29 @@
 ---
 layout: research
-title: Terahertz Chiral Valley Edge States via Dirac Mass Engineering
-description: Transferring a chiral valley edge-state mechanism from microwave to a fabrication-compatible THz platform (visiting research at NTU)
-img: assets/img/projects/thz_valley/3D.png
-importance: 1
+title: Terahertz Chiral Valley Edge States
+description: Numerical modeling and optimization of terahertz photonic structures during a visiting research stay at NTU
+importance: 2
 category: research
 short_title: "Terahertz chiral valley edge states"
 platform: "Terahertz photonic crystals"
-role: "Visiting Research Student · NTU"
-status: "Numerically validated design"
-summary: "Designing a Chern–valley interface around 0.14 THz, with 3D simulations that account for fabrication tolerances and air layers."
+role: "Numerical modeling & design optimization · NTU"
+status: "Simulation and design study"
+summary: "Modeling terahertz Chern–valley interfaces and assessing how magnetic bias, fabrication tolerances, and air layers affect the design."
 ---
-**Context:** Visiting Research Student, School of Physical and Mathematical Sciences, Nanyang Technological University (NTU), Singapore, with Prof. Baile Zhang (Jan–Apr 2026).
 
-During my visit to NTU, I worked on transferring a chiral valley edge-state mechanism from the microwave regime to a **fabrication-compatible THz platform**, with the long-term goal of moving topological wave transport toward compact, chip-compatible implementations. The concept relies on Dirac mass engineering at a hybrid Chern photonic crystal (CPC) – valley photonic crystal (VPC) interface, where valley-dependent and chiral transport can coexist.
+**Context:** Visiting Research Student (Non-Graduating), Nanyang Technological University, Singapore, with Prof. Baile Zhang, January 12–April 27, 2026.
 
-**Design challenge.** A direct geometric scaling of the microwave structure is insufficient: the original YIG-pillar concept had to be redesigned into a **laser-drilled YIG-slab geometry** compatible with the available fabrication route, and the useful bandgap window is sensitive to realistic factors — magnetic-bias orientation, hole-diameter tolerance, domain alignment, and the air layer between the YIG slab and the PEC boundaries.
+## Research focus
 
-## Workflow
+This project investigates topological wave transport in terahertz photonic structures. My work focused on numerical modeling and the practical constraints that arise when adapting a photonic design to a different frequency range.
 
-- Scaled the original microwave design to the THz regime and evaluated whether the gyromagnetic response of YIG remains sufficient for the target topological mechanism.
-- Redesigned the structure from a YIG-pillar lattice to a laser-drilled YIG-slab configuration.
-- Used 2D COMSOL eigenfrequency calculations for rapid geometry screening and 3D COMSOL simulations for realistic YIG–PEC verification.
-- Calculated CPC and VPC bulk bands to identify overlapping spectral windows, and built CPC–VPC supercell models to verify interface-localized modes.
+## My contribution
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/thz_valley/supercell_bands_2d.png" title="2d supercell bands" alt="Projected interface bands from the two-dimensional Chern–valley supercell model" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/thz_valley/supercell_bands_3d.png" title="3d supercell bands" alt="Projected interface bands from the full three-dimensional YIG–PEC model" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Projected band structures of the CPC–VPC interface: 2D eigenfrequency approximation (left) versus full 3D YIG–PEC model (right). The overlapping topological gap supports interface-localized chiral valley edge states near 138–141 GHz.
-</div>
+- Developed 2D and 3D COMSOL models of Chern–valley interfaces to evaluate overlapping bulk bandgaps and interface-localized modes.
+- Optimized a magneto-optic slab geometry while assessing magnetic bias, fabrication tolerances, and finite air-layer effects.
 
-## Mode localization in an earlier design
+This experience strengthened my ability to compare simplified models with three-dimensional electromagnetic simulations and to incorporate fabrication constraints into numerical design.
 
-<!-- Figure source: PPT_Research_experience_Chengle_Fan.pdf, p. 35. The author confirmed that this figure shows an earlier design, not the latest geometry. -->
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/thz_valley/early_design_bands_modes.png" title="Earlier-design bands and mode profiles" alt="Earlier THz interface design: projected bands, a magnified spectral region, and three corresponding field profiles identified by triangle and star markers" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Projected bands and selected eigenmode field profiles for an earlier CPC–VPC interface design. The enlarged spectral region links the marked states to the three field profiles on the right; the star-marked state is localized near the interface. This figure documents an earlier design iteration; its geometry and frequencies differ from the latest optimized design.
-</div>
+## Scope
 
-## Fabrication-aware optimization
-
-I swept hole-diameter errors to evaluate fabrication tolerance, included a finite air layer between the YIG slab and PEC in the 3D model, and re-optimized the structure after observing the associated frequency shift.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/thz_valley/fabrication_tolerance.png" title="fabrication tolerance" alt="Chern and valley photonic-crystal band edges as a function of fabrication error" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Fabrication-tolerance analysis: the CPC/VPC band edges at the K and K′ valleys as functions of the hole-diameter error. The bandgap overlap — and hence the interface state window — survives realistic micrometre-scale fabrication errors.
-</div>
-
-**Key results.** The redesigned THz platform supports a projected interface window with localized edge-state behavior after fabrication-aware optimization. The main conclusion is that this type of THz topological photonic design must be treated as a **full design loop** rather than a simple scaling problem — especially when moving toward compact, fabrication-compatible implementations. The optimized parameters were delivered to NTU collaborators for subsequent fabrication and experiments.
+This page summarizes my simulation and design contribution during the NTU visit.

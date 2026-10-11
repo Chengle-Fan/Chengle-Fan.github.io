@@ -2,7 +2,7 @@
 layout: home
 title: About
 permalink: /
-description: Chengle Fan is an undergraduate researcher at SUSTech working on topological photonics, synthetic gauge fields, and engineered wave transport.
+description: Chengle Fan is an undergraduate researcher at SUSTech combining electromagnetic modeling, photonic design, and microwave experiments, with interests in nanophotonics and integrated photonic devices.
 announcements:
   enabled: true
   scrollable: false
@@ -10,13 +10,14 @@ announcements:
 ---
 <section class="home-intro" aria-labelledby="intro-title">
   <div class="intro-copy">
-    <p class="eyebrow">Metamaterials · Topological Photonics · Light-Matter Interaction</p>
+    <p class="eyebrow">Photonic Structures · Wave Control · Device Design</p>
     <h1 id="intro-title">Chengle Fan</h1>
     <p class="intro-role">Undergraduate researcher at <a href="https://sustech.edu.cn/en/">SUSTech</a></p>
-    <p class="intro-lead">I study how artificial photonic structures control the flow of light.</p>
-    <p>My research combines theoretical modeling, full-wave simulations, and microwave experiments to explore topological phenomena, nonreciprocal wave transport, and synthetic gauge fields in photonic systems.</p>
+    <p class="intro-lead">I study how photonic structures control light, from wave physics to device design.</p>
+    <p>My work connects electromagnetic modeling, photonic design, and microwave experiments. I am interested in extending this approach to reconfigurable nanophotonic and integrated devices for optical information processing and sensing.</p>
     <div class="action-links">
       <a class="button-primary" href="{{ '/projects/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
+      <a class="button-secondary" href="{{ '/cv/' | relative_url }}">View my CV</a>
     </div>
     <div class="intro-contact"><a class="intro-email" href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a></div>
   </div>
@@ -30,18 +31,19 @@ announcements:
   <div class="section-heading"><h2 id="about-heading">About me</h2><span class="section-kicker">Background & interests</span></div>
   <div class="about-columns">
     <div>
-      <p>I am pursuing a B.Eng. in Optoelectronic Information Science and Engineering at SUSTech, with graduation expected in June 2027. Since February 2025, I have worked in Prof. Zhen Gao’s Topological Physics Research Group in the Department of Electronic and Electrical Engineering.</p>
-      <p>From January to April 2026, I was a visiting research student with Prof. Baile Zhang at Nanyang Technological University, developing fabrication-compatible terahertz photonic structures.</p>
+      <p>I am pursuing a B.Eng. in Optoelectronic Information Science and Engineering at SUSTech, with graduation expected in June 2027. Since February 2025, I have worked in Prof. Zhen Gao’s Artificial Microstructure Physics Research Group.</p>
+      <p>My main research project brings together full-wave modeling, sample design, experimental characterization, and manuscript preparation for pseudospin-locked chiral edge states. I also contribute to experiments on cavity-controlled photonic systems and am exploring cavity-controlled refraction.</p>
+      <p>From January 12 to April 27, 2026, I was enrolled as a Visiting Research Student (Non-Graduating) at Nanyang Technological University, working with Prof. Baile Zhang on numerical modeling and optimization of terahertz photonic structures.</p>
     </div>
     <div class="research-interests">
       <h3>Research interests</h3>
       <ul>
-        <li>Topological photonics & nonreciprocity</li>
-        <li>Photonic crystals & metamaterials</li>
-        <li>Synthetic gauge fields & duality</li>
-        <li>Time-varying & spatiotemporal photonics</li>
+        <li>Nanophotonics & integrated photonic devices</li>
+        <li>Optical modes & light–matter interactions</li>
+        <li>Reconfigurable photonic structures</li>
+        <li>Topological & time-varying wave systems</li>
       </ul>
-      <p>I hope to extend this work toward integrated photonic platforms for reconfigurable control of light.</p>
+      <p>I aim to pursue a research career in academia or industrial R&amp;D, developing photonic devices for information processing and sensing.</p>
     </div>
   </div>
 </section>
@@ -51,7 +53,8 @@ announcements:
   <div class="featured-research">
     {% assign featured = site.projects | where_exp: "project", "project.listed != false" | sort: 'importance' %}
     {% for project in featured limit: 3 %}
-    <article class="research-preview">
+    <article class="research-preview{% unless project.img %} research-preview-text{% endunless %}">
+      {% if project.img %}
       <a class="research-image" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">
         {% assign image_stem = project.img | split: '.' | pop | join: '.' %}
         <picture>
@@ -59,6 +62,7 @@ announcements:
           <img src="{{ project.img | relative_url }}" alt="" width="640" height="400" loading="lazy">
         </picture>
       </a>
+      {% endif %}
       <p class="eyebrow">{{ project.platform }}</p>
       <h3><a href="{{ project.url | relative_url }}">{{ project.short_title }}</a></h3>
       <p>{{ project.summary }}</p>
@@ -79,6 +83,6 @@ announcements:
 </section>
 
 <div class="contact-strip">
-  <div><h2>Get in touch</h2><p>I am interested in graduate research opportunities in photonics and related areas.</p></div>
+  <div><h2>Get in touch</h2><p>I am seeking PhD opportunities starting in Fall 2027 in photonics and related areas.</p></div>
   <a href="mailto:{{ site.data.socials.email }}">Email me <span aria-hidden="true">↗</span></a>
 </div>
