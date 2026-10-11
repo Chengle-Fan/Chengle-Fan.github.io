@@ -102,23 +102,44 @@ related_posts: false
 
 ## 研究图片公开范围
 
-2026-10-12 核对的官方政策支持有条件的提前学术交流，并非“论文未发表就不能放图片”：
+2026-10-12 针对 PRL、Nature Photonics、Nature Physics、Nature Communications 和 Science Advances 核对官方政策。以下区分期刊明文政策与本站的内容选择；“物理示意图”不是自动豁免类别，也没有期刊对本站逐张图片作出批准。
 
-- [Nature Portfolio 自存档政策](https://www.nature.com/nature/editorial-policies/self-archiving-and-license-to-publish)允许在作者网站及预印本服务器发布预印本，且不将其视为此前正式发表；[Nature Photonics 编辑政策](https://www.nature.com/nphoton/editorial-policies)采用该系列的共同政策。
-- [APS 作者版权 FAQ](https://journals.aps.org/copyrightFAQ.html)说明作者在个人网站和免费预印本平台的共享权利；使用时区分作者版本与出版社版本，并遵守适用的引用要求。
-- [Optica 的预印本政策](https://opg.optica.org/content/author/portal/item/review-copyright-permissions/)允许投稿前及审稿期间在预印本服务器发布稿件，接收/发表后的版本及署名要求另有规定。
-
-下表是针对本站图片内容的编辑选择，并非期刊逐张批准或禁止的清单。
-
-| 项目 | 本次保留 | 本次不展示 |
+| 期刊 | 可核实的政策 | 对本站的判断 |
 | --- | --- | --- |
-| Chiral edge | `concept.jpeg`：概念对比及示意色散，caption 明确其性质 | 实验综合图、相图、器件实测结果 |
-| Gauge-field duality | `symmetry_duality_concept.png`：作者绘制的概念示意，附理论背景文献 | 具体实现、能带、全波结果及谱图 |
+| Physical Review Letters | [PRL 作者指南](https://journals.aps.org/prl/authors)说明 APS 投稿通常没有 embargo，具体稿件可另行约定；[投稿指南](https://journals.aps.org/authors/web-submission-guidelines-physical-review)支持从 arXiv 提交；[版权协议](https://journals.aps.org/authors/transfer-of-copyright-agreement)保留作者在个人网站使用文章全部或部分内容的权利。该版权协议主要规定转让后的权利，不单独决定投稿前的新颖性。 | 根据这些规则，作者网站展示原稿结构示意一般不构成投稿障碍；如稿件有专门 embargo，以具体约定为准。这是政策适用判断。 |
+| Nature Photonics | [本刊预印本政策](https://www.nature.com/nphoton/editorial-policies/preprints-conference-proceedings)明确包括作者个人网站，允许审稿期间发布预印本，且不将其视为先前发表。 | 个人网站学术展示有依据；不将此解释为对每张图片的单独批准。 |
+| Nature Physics | [本刊预印本政策](https://www.nature.com/nphys/editorial-policies/preprints-conference-proceedings)采用相同规则。 | 同上。 |
+| Nature Communications | [本刊预印本政策](https://www.nature.com/ncomms/editorial-policies/preprints-conference-proceedings)采用相同规则。 | 同上。 |
+| Science Advances | 本次访问[现行编辑政策](https://www.science.org/content/page/science-journals-editorial-policies)与[作者指南](https://www.science.org/content/page/science-advances-information-authors)受阻，未能直接核实全文；2017 年官方社论 [Preprint ecosystems](https://www.sciencemagazinedigital.org/sciencemagazine/29_september_2017?pg=7)支持非营利预印本服务器，但这不能替代现行个人网站政策。 | **尚未完全核实**。不能写成 Science Advances 已明确允许本站展示未发表原稿图；拟投此刊时需重新核对当前条款。 |
+
+Nature 三刊要求披露预印本发布情况，并遵守[媒体宣传与禁发政策](https://www.nature.com/nphoton/editorial-policies/press-and-embargo-policies)，包括保密审稿过程。作者接受稿、出版社版本与普通预印本的共享规则应分别核对。期刊政策也不代替团队已有的图件公开安排。
+
+下表是本站根据用户明确指定范围作出的编辑选择；保留示意、暂缓核心结果，是披露程度的选择，并非上述期刊强制要求所有未发表结果图一律删除。
+
+| 项目 | 当前展示 | 当前不展示 |
+| --- | --- | --- |
+| Chiral edge | `concept.jpeg`：概念对比及示意色散，caption 说明性质 | 实验综合图、相图、器件实测结果 |
+| Gauge-field duality | `symmetry_duality_concept.png`：概念示意，附理论背景文献 | 具体实现、能带、全波结果及谱图 |
 | Cavity Dirac / refraction | `cavity_schematic.png`：结构概览；`refraction_candidate.png`：初步数值探索 | Dirac 论文完整的实验和能带结果 |
-| THz valley | 文字说明建模与优化贡献 | 现有图片包含能带、带隙、参数与模式结果，暂不作为概念封面 |
-| Photonic time crystals | 三张数值训练图：分别说明已发表问题复现、TMM计算和有限脉冲FFT响应 | 不将训练结果包装成已发表的新发现 |
-| Cavity transport / EP | 文字说明实验贡献，排在后面 | 不从未发表稿件新增结果图 |
+| THz valley | 恢复五张原始仿真图：3D、2D/3D supercell、早期设计模式及容差分析；用户明确说明这些不是最终论文图片 | 不增加实验结果或“已验证器件”的表述 |
+| Photonic time crystals | 三张数值训练图，分别说明已发表问题复现、TMM计算和有限脉冲FFT响应 | 不将训练结果包装成已发表的新发现 |
+| Cavity transport | 原稿 Fig. 1(g–i) 传播现象示意，单独 g 面板作为封面 | 能带、参数曲线、实验场图 |
+| Cavity EP | 原稿 Fig. 1(a) 理论共振器链与腔结构示意 | EP 谱图、实验数据和修订过程材料 |
+
+Transport / EP 保持排在研究列表末尾。两图 caption 标明来自合作稿件；EP 的 ±iγ 明确是理论模型的增益／损耗项，不能据此推断个人完成了增益实验。Transport 示意不表示三个阶段在相同频率下的实测传播。
+
+新增图件来源与复现记录（仅从原 PDF 渲染裁取完整面板，没有重画或改变科学内容）：
+
+- `manuscript_2026-10-10_V1.pdf`，PDF 第 5 页 Fig. 1(g–i)：300 dpi，裁取 `(x=350, y=1840, W=1790, H=375)`；封面 Fig. 1(g) 为 `(350,1840,635,375)`。g 图 Ls 下方的向上箭头属于腔高尺寸标注，应保留。
+- `PRL Manuscript_20260618-1811.pdf`，PDF 第 2 页 Fig. 1(a)：300 dpi，裁取 `(x=221, y=207, W=1005, H=452)`。
+- THz 五张图片从原网站备份恢复，未改变像素内容。图注区分早期设计和后续优化，并将容差结论限制为所扫描范围内的带隙重叠。
 
 折射图是正在探索的候选条件：射线来自能带与等频线分析，不代表已验证的波束强度或功率分配。页面需保留 preliminary / candidate 的表述；同一入射场的耦合、模式一致性及波束功率仍待验证。
 
-更换为正式发表图片时，核对最终许可、作者身份和图源，补上论文链接。已经出现在公开 Git 历史中的旧图片，不会因为从当前版本移除而被历史记录自动删除。
+更换为正式发表图片时，核对最终许可、作者身份和图源，补上论文链接。已出现在公开 Git 历史中的旧图片，不会因为从当前版本移除而被历史记录自动删除。
+
+## 字体与排版
+
+2026-10-12：标题、姓名及首页引导句使用 Source Serif 4；正文、导航、CV 条目及论文长标题使用 Inter。两款字体以 WOFF2 自托管，包含常规／斜体、400–700 可变字重及 Latin / Latin Extended 子集。来源与 SIL Open Font License 保存在 `assets/fonts/`。字体使用 `font-display: swap`，加载前有系统字体回退；Google Fonts 链接只保留搜索组件所需的 Material Icons。
+
+字体规则集中在 `assets/css/main.scss`，同时调整桌面／手机字号、行高和标题间距。首页引导句为 “I explore how structure shapes light, turning physical insight into photonic design.”；职业目标段落已删除。

@@ -13,7 +13,7 @@ announcements:
     <p class="eyebrow">Photonic Structures · Wave Control · Device Design</p>
     <h1 id="intro-title">Chengle Fan</h1>
     <p class="intro-role">Undergraduate researcher at <a href="https://sustech.edu.cn/en/">SUSTech</a></p>
-    <p class="intro-lead">I study how photonic structures control light, from wave physics to device design.</p>
+    <p class="intro-lead">I explore how structure shapes light, turning physical insight into photonic design.</p>
     <p>My work connects electromagnetic modeling, photonic design, and microwave experiments. I am interested in extending this approach to reconfigurable nanophotonic and integrated devices for optical information processing and sensing.</p>
     <div class="action-links">
       <a class="button-primary" href="{{ '/projects/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
@@ -43,7 +43,6 @@ announcements:
         <li>Reconfigurable photonic structures</li>
         <li>Topological & time-varying wave systems</li>
       </ul>
-      <p>I aim to pursue a research career in academia or industrial R&amp;D, developing photonic devices for information processing and sensing.</p>
     </div>
   </div>
 </section>
