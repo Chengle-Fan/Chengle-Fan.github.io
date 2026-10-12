@@ -25,7 +25,7 @@ layout: page
         {% if entry.courses %}<p class="cv-coursework"><strong>Selected coursework:</strong> {{ entry.courses }}</p>{% endif %}
       {% elsif entry.authors %}
         <h3>{{ entry.title }}</h3>
-        <p class="cv-authors">
+        <p class="cv-authors notranslate" translate="no">
           {%- for author in entry.authors -%}
             {%- assign author_name = author | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
             {%- assign author_markers = author | remove: author_name -%}

@@ -1,7 +1,7 @@
 ---
 ---
 <div id="{{ entry.key }}" class="publication-citation">
-  <p>
+  <p><span class="publication-authors notranslate" translate="no">
     {%- for author in entry.author_array -%}
       {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
       {%- assign author_markers = author.last | remove: author_last_name -%}
@@ -18,7 +18,7 @@
       {%- else -%}
         {{ author.first }} {{ author_last_name }}{% if author_markers != empty %}<sup>{{ author_markers }}</sup>{% endif %}
       {%- endif -%}
-    {%- endfor -%}, “<span class="citation-title">{{ entry.title }}</span>”, <em class="citation-status">{{ entry.note | strip }}</em>
+    {%- endfor -%}</span>, “<span class="citation-title">{{ entry.title }}</span>”, <em class="citation-status">{{ entry.note | strip }}</em>
   </p>
   {% if entry.doi or entry.pdf or entry.arxiv or entry.html %}
     <div class="links">

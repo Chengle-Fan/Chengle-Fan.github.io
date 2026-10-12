@@ -48,6 +48,7 @@ related_posts: false
 - `pdf = {...}` / `arxiv = {...}` / `html = {...}`：生成对应链接按钮
 - 首页和 Publications 共用 `_layouts/bib_cv.liquid`，按 CV 排成“完整作者名单，‘题目’，稿件状态”。只将 Chengle Fan 的姓名加粗（700），无下划线、无斜体；其他作者正常字重，状态统一斜体。不折叠作者、不重复单列年份，不展示作者链接或期刊徽章。
 - 共一作者：在 BibTeX 姓氏后加 `*`，例如 `Fan*, Chengle and Shi*, Kaizhou`；通讯作者用 `†`。标记上标显示，与姓名加粗分开处理，并与 CV 保持一致。
+- 作者名单（包括姓名、分隔符和上标）使用 `translate="no"` 和 `notranslate` 类，首页、Publications 与网页版 CV 保持一致；论文题目、状态及其他正文仍可翻译。2026-10-12 用户在 iPhone Edge 确认网页翻译会导致标记重复，关闭翻译后正常；这两个标记用于保护原始署名，参见 [Microsoft Translator 说明](https://learn.microsoft.com/en-gb/azure/ai-services/translator/text-translation/how-to/prevent-translation)。不要为迁就翻译后的重复结果修改作者数据。
 - 当前自定义模板用于三篇准备中的稿件。论文接收或发表后，除更新 `note` 外，还需扩展模板显示期刊、卷页与年份，或恢复主题的 `bib` 模板。
 
 ### 更新 CV
