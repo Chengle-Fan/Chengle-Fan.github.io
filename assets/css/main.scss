@@ -339,6 +339,18 @@ a.button-secondary:hover { background-color: var(--glass-bg-strong); text-decora
 .publication-note { border-left: 3px solid var(--global-theme-color); padding: 0.8rem 1.2rem; background: var(--site-soft); margin-bottom: 2rem; }
 .publications ol.bibliography li .title { font-family: var(--font-body); font-size: 1.0625rem; font-weight: 600; line-height: 1.5; letter-spacing: -0.015em; }
 .publications ol.bibliography li .author, .publications ol.bibliography li .periodical { line-height: 1.65; }
+.publications ol.bibliography li .author { font-family: var(--font-body); font-size: 1rem; font-weight: 400; font-style: normal; letter-spacing: normal; }
+.publications ol.bibliography li .author > em {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  white-space: nowrap;
+}
 .publications ol.bibliography { padding-left: 0; }
 .skip-link { position: fixed; top: -100px; left: 1rem; padding: 0.75rem 1rem; background: var(--global-bg-color); z-index: 2000; }
 .skip-link:focus { top: 0.5rem; }
