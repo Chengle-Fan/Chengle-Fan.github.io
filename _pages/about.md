@@ -3,6 +3,10 @@ layout: home
 title: About
 permalink: /
 description: Chengle Fan is an undergraduate researcher at SUSTech combining electromagnetic modeling, photonic design, and microwave experiments, with interests in nanophotonics and integrated photonic devices.
+featured_projects:
+  - /projects/1_pseudospin_locked_chiral_edge/
+  - /projects/4_mdec/
+  - /projects/0_photonic_time_crystals/
 announcements:
   enabled: true
   scrollable: false
@@ -50,8 +54,8 @@ announcements:
 <section class="home-section" aria-labelledby="research-heading">
   <div class="section-heading"><h2 id="research-heading">Selected research</h2><a href="{{ '/projects/' | relative_url }}">All projects <span aria-hidden="true">↗</span></a></div>
   <div class="featured-research">
-    {% assign featured = site.projects | where_exp: "project", "project.listed != false" | sort: 'importance' %}
-    {% for project in featured limit: 3 %}
+    {% for project_url in page.featured_projects %}
+    {% assign project = site.projects | where: "url", project_url | first %}
     <article class="research-preview{% unless project.img %} research-preview-text{% endunless %}">
       {% if project.img %}
       <a class="research-image" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">
