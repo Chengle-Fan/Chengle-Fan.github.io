@@ -1,0 +1,31 @@
+---
+---
+<div id="{{ entry.key }}" class="publication-citation">
+  <p>
+    {%- for author in entry.author_array -%}
+      {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+      {%- assign author_markers = author.last | remove: author_last_name -%}
+      {%- assign author_is_self = false -%}
+      {%- if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first -%}
+        {%- assign author_is_self = true -%}
+      {%- endif -%}
+      {%- unless forloop.first -%}
+        {%- if forloop.length > 2 -%}, {% else %} {% endif -%}
+        {%- if forloop.last -%}and {% endif -%}
+      {%- endunless -%}
+      {%- if author_is_self -%}
+        <span class="publication-author-self"><strong>{{ author.first }} {{ author_last_name }}</strong>{% if author_markers != empty %}<sup>{{ author_markers }}</sup>{% endif %}</span>
+      {%- else -%}
+        {{ author.first }} {{ author_last_name }}{% if author_markers != empty %}<sup>{{ author_markers }}</sup>{% endif %}
+      {%- endif -%}
+    {%- endfor -%}, “<span class="citation-title">{{ entry.title }}</span>”, <em class="citation-status">{{ entry.note | strip }}</em>
+  </p>
+  {% if entry.doi or entry.pdf or entry.arxiv or entry.html %}
+    <div class="links">
+      {% if entry.doi %}<a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0">DOI</a>{% endif %}
+      {% if entry.pdf %}<a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}" class="btn btn-sm z-depth-0">PDF</a>{% endif %}
+      {% if entry.arxiv %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0">arXiv</a>{% endif %}
+      {% if entry.html %}<a href="{% if entry.html contains '://' %}{{ entry.html }}{% else %}{{ entry.html | relative_url }}{% endif %}" class="btn btn-sm z-depth-0">HTML</a>{% endif %}
+    </div>
+  {% endif %}
+</div>

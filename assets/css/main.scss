@@ -337,20 +337,26 @@ a.button-secondary:hover { background-color: var(--glass-bg-strong); text-decora
 .project-next h2 { font-size: 1.35rem; }
 .project-next a { display: block; padding: 0.45rem 0; }
 .publication-note { border-left: 3px solid var(--global-theme-color); padding: 0.8rem 1.2rem; background: var(--site-soft); margin-bottom: 2rem; }
-.publications ol.bibliography li .title { font-family: var(--font-body); font-size: 1.0625rem; font-weight: 600; line-height: 1.5; letter-spacing: -0.015em; }
-.publications ol.bibliography li .author, .publications ol.bibliography li .periodical { line-height: 1.65; }
-.publications ol.bibliography li .author { font-family: var(--font-body); font-size: 1rem; font-weight: 400; font-style: normal; letter-spacing: normal; }
-.publications ol.bibliography li .author > em {
+.publications .publication-citation {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+}
+.publications .publication-citation p { margin: 0 0 0.5rem; }
+.publications .publication-author-self { white-space: nowrap; }
+.publications .publication-author-self strong {
   font-family: inherit;
   font-size: inherit;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
   border-bottom: 0;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  white-space: nowrap;
+  text-decoration: none;
 }
+.publications .citation-title { font-weight: 400; font-style: normal; }
+.publications .citation-status { font-weight: 400; font-style: italic; }
 .publications ol.bibliography { padding-left: 0; }
 .skip-link { position: fixed; top: -100px; left: 1rem; padding: 0.75rem 1rem; background: var(--global-bg-color); z-index: 2000; }
 .skip-link:focus { top: 0.5rem; }

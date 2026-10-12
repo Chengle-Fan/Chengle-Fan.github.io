@@ -45,10 +45,10 @@ related_posts: false
 
 - `selected = {true}`：让该文出现在首页 "selected publications"
 - Publications 和首页 Manuscripts 均保持纯文字；不要添加 `preview`。`_config.yml` 中 `enable_publication_thumbnails: false`。
-- `abbr = {PRL}`：期刊缩写徽章（配色在 `_data/venues.yml` 里定义）
 - `pdf = {...}` / `arxiv = {...}` / `html = {...}`：生成对应链接按钮
-- 想让合作者名字变成链接：编辑 `_data/coauthors.yml`
-- 共一作者：在 BibTeX 姓氏后加 `*`，例如 `Fan*, Chengle and Shi*, Kaizhou`。主题会显示上标，Publications 页说明 `*` 表示同等贡献；在 `note` 中写明 Chengle 的共一作者排序，并与 CV 保持一致。
+- 首页和 Publications 共用 `_layouts/bib_cv.liquid`，按 CV 排成“完整作者名单，‘题目’，稿件状态”。只将 Chengle Fan 的姓名加粗（700），无下划线、无斜体；其他作者正常字重，状态统一斜体。不折叠作者、不重复单列年份，不展示作者链接或期刊徽章。
+- 共一作者：在 BibTeX 姓氏后加 `*`，例如 `Fan*, Chengle and Shi*, Kaizhou`；通讯作者用 `†`。标记上标显示，与姓名加粗分开处理，并与 CV 保持一致。
+- 当前自定义模板用于三篇准备中的稿件。论文接收或发表后，除更新 `note` 外，还需扩展模板显示期刊、卷页与年份，或恢复主题的 `bib` 模板。
 
 ### 更新 CV
 
@@ -93,7 +93,8 @@ related_posts: false
 - `assets/css/main.scss`：有意覆盖主题的 Sass 入口，继续导入 `al_folio_core` 1.0.15 的原有 partials，随后添加本站排版、蓝色主题、深色模式与响应式规则。升级主题时需要核对入口导入列表。
 - `_layouts/home.liquid`：新增首页布局，继承主题 `default`，提供首页内容容器与跳至正文链接。
 - `_layouts/research.liquid`：新增研究详情布局，继承主题 `page`，自动显示项目摘要和其他项目链接。
-- 未覆盖主题的 `_includes/` 或 `_sass/`。导航、搜索、论文渲染继续使用固定版本的主题 gems。
+- 未覆盖主题的 `_includes/` 或 `_sass/`。导航、搜索继续使用固定版本的主题 gems。
+- `_layouts/bib_cv.liquid`：有意新增共享论文模板，由 `_config.yml` 的 `scholar.bibliography_template` 指定。首页和 Publications 页直接读取同一份 BibTeX；完整作者名单、题目与状态按 CV 顺序显示，姓名仅加粗，避免主题默认 `<em>` 的下划线样式。
 - 保留的科研封面沿用 ImageMagick 管线生成 WebP 响应式版本；本次决定暂不展示的结果图也从部署目录移除，避免仍可通过静态文件地址访问。
 - 投稿、接收、正式发表需要分别更新，不要把 `Manuscript in preparation` 写成已投稿或已发表论文。
 - `_layouts/cv.liquid`：有意覆盖主题 CV 布局，继续读取 `_data/cv.yml`。主题 1.0.2 的 CV 渲染器仅识别少数固定节名，原有 Research Experience、Research Grant、Leadership and Activities 的内容及教育 score 会被静默遗漏；本站布局按字段渲染这些内容，提供原始 CV PDF 的打开入口，并保留章节目录。
