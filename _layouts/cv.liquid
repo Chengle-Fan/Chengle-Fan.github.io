@@ -25,7 +25,14 @@ layout: page
         {% if entry.courses %}<p class="cv-coursework"><strong>Selected coursework:</strong> {{ entry.courses }}</p>{% endif %}
       {% elsif entry.authors %}
         <h3>{{ entry.title }}</h3>
-        <p>{{ entry.authors | join: ', ' }}</p>
+        <p class="cv-authors">
+          {%- for author in entry.authors -%}
+            {%- assign author_name = author | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+            {%- assign author_markers = author | remove: author_name -%}
+            {%- unless forloop.first -%}, {% endunless -%}
+            <span class="cv-author">{% if author_name == cv.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}{% if author_markers != empty %}<sup>{{ author_markers }}</sup>{% endif %}</span>
+          {%- endfor -%}
+        </p>
         <p class="research-status">{{ entry.publisher }} · {{ entry.releaseDate }}</p>
       {% elsif entry.awarder %}
         <div class="cv-entry-heading"><h3>{{ entry.title }}</h3><p class="cv-date">{{ entry.date }}</p></div>

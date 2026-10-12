@@ -39,7 +39,7 @@ cv:
           - Kaizhou Shi*
           - Xiang Xi†
           - Zhen Gao†
-        publisher: "Manuscript in preparation. * Equal contribution; † Corresponding authors."
+        publisher: "Manuscript in preparation. * Equal contribution (co-first authors); † Corresponding authors."
         releaseDate: 2026
       - title: Cavity-Tunable Dirac Phases in a Microwave Metasurface
         authors:
@@ -50,12 +50,12 @@ cv:
           - Yan Meng†
           - Baile Zhang†
           - Zhen Gao†
-        publisher: "Manuscript in preparation. * Equal contribution; † Corresponding authors."
+        publisher: "Manuscript in preparation. * Equal contribution (co-first authors); † Corresponding authors."
         releaseDate: 2026
       - title: Cavity-tunable Orbital Band Inversion and Helical Edge Transport
         authors:
           - Minghui Niu*
-          - Yan Meng*
+          - Yan Meng*†
           - Chengle Fan
           - Xiaoyuan Jiao
           - Jidong Song
@@ -63,7 +63,7 @@ cv:
           - Perry Ping Shum
           - Zhen Gao†
           - Mengyao Li†
-        publisher: "Manuscript in preparation. * Equal contribution; † Corresponding authors."
+        publisher: "Manuscript in preparation. * Equal contribution (co-first authors); † Corresponding authors."
         releaseDate: 2026
 
     Research Experience:
@@ -76,7 +76,7 @@ cv:
         highlights:
           - Led full-wave modeling and sample design of a gyromagnetic photonic crystal; characterized its topological phases using band inversion, pseudospin-resolved eigenfields, and spin Chern numbers.
           - Designed measurement configurations and participated in most VNA transmission and near-field experiments, demonstrating approximately 20 dB directional transmission contrast and pseudospin-selective edge-mode excitation within the bandgap.
-          - Designed a pseudospin multiplexer/demultiplexer and a low-crosstalk waveguide crossing; wrote the manuscript and prepared all figures.
+          - Designed a pseudospin multiplexer/demultiplexer and a low-crosstalk waveguide crossing; wrote the first-authored manuscript and prepared its figures.
           - Contributed to sublattice-resolved VNA measurements of cavity-tunable Dirac phases, supporting pseudospin-texture reconstruction and winding-number characterization; co-first author on the manuscript.
           - Investigating cavity-controlled refraction through MATLAB analysis of simulated bands, isofrequency contours, and interface phase matching, identifying candidate operating conditions for reconfigurable beam routing.
           - Developed tight-binding and full-wave models to explore gauge-field-induced duality and Hofstadter-type spectra in photonic lattices.
@@ -108,7 +108,7 @@ cv:
       - name: Time-varying and spatiotemporal photonics
         keywords: "MATLAB-based PWE/TMM band calculations, eigenfield reconstruction, and FDTD simulations for photonic time crystals and space–time-periodic media"
       - name: Experimental characterization
-        keywords: "VNA transmission and near-field measurements, optical alignment, CCD imaging, polarization microscopy, liquid-crystal cell assembly, electro-optic characterization"
+        keywords: "VNA transmission and near-field mapping, optical alignment, CCD imaging, polarization microscopy, liquid-crystal cell assembly, electro-optic characterization"
       - name: Programming and software
         keywords: "MATLAB and COMSOL LiveLink; basic experience with C and Meep FDTD; familiarity with Silvaco, Zemax, and TracePro"
 

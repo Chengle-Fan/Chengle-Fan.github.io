@@ -54,6 +54,7 @@ related_posts: false
 
 - 网页版 CV：编辑 `_data/cv.yml`（结构化 YAML，仿照现有条目增删）。
 - PDF 版：替换 `assets/pdf/CV_Chengle_Fan.pdf`。`_pages/cv.md` 的 `cv_pdf` 指向该文件，CV 页顶部提供 `Open CV (PDF)` 入口。请同步更新网页数据与 PDF。
+- 作者标记在 `_bibliography/papers.bib` 和 `_data/cv.yml` 中同步维护，模板将每个标记只输出一次上标；例如腔调控输运稿件的 Yan Meng 为 `*†`（共一兼通讯），Chengle Fan 无标记。网页版 CV 中姓名也仅加粗。
 - 旧文件 `assets/pdf/CV_general.pdf` 已被构建排除，避免同时提供旧 CV。
 
 ### 更换头像
