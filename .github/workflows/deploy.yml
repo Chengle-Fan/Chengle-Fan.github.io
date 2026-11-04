@@ -70,7 +70,8 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          # New runner images provide the latest patch release of each Ruby series.
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Setup Node 🧰
         uses: actions/setup-node@v4
