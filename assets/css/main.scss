@@ -408,8 +408,8 @@ footer { margin-top: 3rem; border-top: 1px solid var(--global-divider-color); }
 .cv-entry li { margin-bottom: 0.55rem; padding-left: 0.1rem; }
 .cv-score { color: var(--global-theme-color); font-size: 0.9375rem; font-weight: 500; font-variant-numeric: tabular-nums; }
 .cv-level { font-size: 0.8125rem; font-weight: 400; color: var(--global-text-color-light); }
-.cv-section[aria-labelledby="manuscripts-in-preparation"] .cv-entry h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; line-height: 1.4; letter-spacing: -0.012em; text-wrap: pretty; margin-bottom: 0.55rem; }
-.cv-section[aria-labelledby="manuscripts-in-preparation"] .cv-entry h3 + p { font-size: 0.9rem; line-height: 1.65; color: var(--global-text-color-light); margin-bottom: 0.65rem; }
+.cv-section[aria-labelledby="manuscripts-and-preprints"] .cv-entry h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; line-height: 1.4; letter-spacing: -0.012em; text-wrap: pretty; margin-bottom: 0.55rem; }
+.cv-section[aria-labelledby="manuscripts-and-preprints"] .cv-entry h3 + p { font-size: 0.9rem; line-height: 1.65; color: var(--global-text-color-light); margin-bottom: 0.65rem; }
 .button-primary .file-label { color: inherit; }
 .academic-cv ul { padding-left: 1.2rem; }
 @media (max-width: 767.98px) {
@@ -417,7 +417,7 @@ footer { margin-top: 3rem; border-top: 1px solid var(--global-divider-color); }
   .cv-section > h2 { font-size: 1.7rem; }
   .cv-entry-heading { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .cv-entry .cv-date { white-space: normal; margin-bottom: 0.6rem; }
-  .cv-section[aria-labelledby="manuscripts-in-preparation"] .cv-entry h3 { font-size: 1.15rem; }
+  .cv-section[aria-labelledby="manuscripts-and-preprints"] .cv-entry h3 { font-size: 1.15rem; }
 }
 
 .intro-contact { display: flex; gap: 0.6rem 1.4rem; flex-wrap: wrap; align-items: center; font-size: 0.875rem; }

@@ -2,12 +2,12 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Research manuscripts and author contributions by Chengle Fan.
+description: Research manuscripts, preprints, and author contributions by Chengle Fan.
 nav: true
 nav_order: 3
 ---
 
-<p class="publication-note">The manuscripts below are in preparation. * Equal contribution (co-first authors); † corresponding authors.</p>
+<p class="publication-note">Manuscripts and preprints are listed below with their current submission status. * Equal contribution (co-first authors); † corresponding authors.</p>
 
 {% include bib_search.liquid %}
 

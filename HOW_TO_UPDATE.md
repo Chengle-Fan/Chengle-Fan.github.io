@@ -49,13 +49,14 @@ related_posts: false
 - 首页和 Publications 共用 `_layouts/bib_cv.liquid`，按 CV 排成“完整作者名单，‘题目’，稿件状态”。只将 Chengle Fan 的姓名加粗（700），无下划线、无斜体；其他作者正常字重，状态统一斜体。不折叠作者、不重复单列年份，不展示作者链接或期刊徽章。
 - 共一作者：在 BibTeX 姓氏后加 `*`，例如 `Fan*, Chengle and Shi*, Kaizhou`；通讯作者用 `†`。标记上标显示，与姓名加粗分开处理，并与 CV 保持一致。
 - 作者名单（包括姓名、分隔符和上标）使用 `translate="no"` 和 `notranslate` 类，首页、Publications 与网页版 CV 保持一致；论文题目、状态及其他正文仍可翻译。2026-10-12 用户在 iPhone Edge 确认网页翻译会导致标记重复，关闭翻译后正常；这两个标记用于保护原始署名，参见 [Microsoft Translator 说明](https://learn.microsoft.com/en-gb/azure/ai-services/translator/text-translation/how-to/prevent-translation)。不要为迁就翻译后的重复结果修改作者数据。
-- 当前自定义模板用于三篇准备中的稿件。论文接收或发表后，除更新 `note` 外，还需扩展模板显示期刊、卷页与年份，或恢复主题的 `bib` 模板。
+- 当前自定义模板用于稿件与预印本：两篇已投稿 Physical Review Letters 并提供 arXiv 链接，一篇准备中、拟投 Nature Physics。论文接收或发表后，除更新 `note` 外，还需扩展模板显示期刊、卷页与年份，或恢复主题的 `bib` 模板。
 
 ### 更新 CV
 
 - 网页版 CV：编辑 `_data/cv.yml`（结构化 YAML，仿照现有条目增删）。
 - PDF 版：替换 `assets/pdf/CV_Chengle_Fan.pdf`。`_pages/cv.md` 的 `cv_pdf` 指向该文件，CV 页顶部提供 `Open CV (PDF)` 入口。请同步更新网页数据与 PDF。
 - 作者标记在 `_bibliography/papers.bib` 和 `_data/cv.yml` 中同步维护，模板将每个标记只输出一次上标；例如腔调控输运稿件的 Yan Meng 为 `*†`（共一兼通讯），Chengle Fan 无标记。网页版 CV 中姓名也仅加粗。
+- 预印本编号使用两份数据中的 `arxiv` 字段；首页、Publications 和网页版 CV 均显示相应链接。学校邮箱保存在 `_data/cv.yml` 的 `academic_email`，供首页和 CV 页面共用。
 - 旧文件 `assets/pdf/CV_general.pdf` 已被构建排除，避免同时提供旧 CV。
 
 ### 更换头像
@@ -99,7 +100,7 @@ related_posts: false
 - `_layouts/bib_cv.liquid`：有意新增共享论文模板，由 `_config.yml` 的 `scholar.bibliography_template` 指定。首页和 Publications 页直接读取同一份 BibTeX；完整作者名单、题目与状态按 CV 顺序显示，姓名仅加粗，避免主题默认 `<em>` 的下划线样式。
 - 保留的科研封面沿用 ImageMagick 管线生成 WebP 响应式版本；本次决定暂不展示的结果图也从部署目录移除，避免仍可通过静态文件地址访问。
 - 投稿、接收、正式发表需要分别更新，不要把 `Manuscript in preparation` 写成已投稿或已发表论文。
-- `_layouts/cv.liquid`：有意覆盖主题 CV 布局，继续读取 `_data/cv.yml`。主题 1.0.2 的 CV 渲染器仅识别少数固定节名，原有 Research Experience、Research Grant、Leadership and Activities 的内容及教育 score 会被静默遗漏；本站布局按字段渲染这些内容，提供原始 CV PDF 的打开入口，并保留章节目录。
+- `_layouts/cv.liquid`：有意覆盖主题 CV 布局，继续读取 `_data/cv.yml`。主题 1.0.2 的 CV 渲染器仅识别少数固定节名，原有 Research Experience、Research Grant、Leadership and Activities 的内容及教育 score 会被静默遗漏；本站布局按字段渲染这些内容，提供原始 CV PDF 的打开入口，并保留章节目录。2026-11-04 增加学校邮箱及稿件 arXiv 链接。
 - `assets/js/theme.js`：有意覆盖 `al_folio_core` 1.0.15 的同路径脚本，保留高亮、图表、搜索等主题联动。默认跟随系统，按钮按当前实际显示的模式单击切换到相反模式，明确选择的明暗偏好在换页或刷新后保留。`assets/css/main.scss` 中的图标规则按实际明暗显示太阳／月亮，不显示系统模式的半日半月图标。升级主题时需核对上游脚本并保留这一切换策略。
 - 模板残留 `_pages/plugins.md` 已从构建排除，避免插件介绍混入学术网站。
 
@@ -145,4 +146,4 @@ Transport / EP 保持排在研究列表末尾。两图 caption 标明来自合�
 
 2026-10-12：标题、姓名及首页引导句使用 Source Serif 4；正文、导航、CV 条目及论文长标题使用 Inter。两款字体以 WOFF2 自托管，包含常规／斜体、400–700 可变字重及 Latin / Latin Extended 子集。来源与 SIL Open Font License 保存在 `assets/fonts/`。字体使用 `font-display: swap`，加载前有系统字体回退；Google Fonts 链接只保留搜索组件所需的 Material Icons。
 
-字体规则集中在 `assets/css/main.scss`，同时调整桌面／手机字号、行高和标题间距。首页引导句为 “I explore how structure shapes light, turning physical insight into photonic design.”；职业目标段落已删除。
+字体规则集中在 `assets/css/main.scss`，同时调整桌面／手机字号、行高和标题间距。2026-11-04 首页引导句更新为 “I explore how the architecture of matter opens new possibilities for light.”，简介并列呈现纳米光子学与光计算两个兴趣方向；职业目标段落已删除。

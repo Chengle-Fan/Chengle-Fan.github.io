@@ -2,7 +2,7 @@
 layout: home
 title: About
 permalink: /
-description: Chengle Fan is an undergraduate researcher at SUSTech combining electromagnetic modeling, photonic design, and microwave experiments, with interests in nanophotonics and integrated photonic devices.
+description: Chengle Fan is an undergraduate researcher at SUSTech combining electromagnetic modeling, photonic design, and microwave experiments, with interests in nanophotonics, integrated photonics, and optical computing.
 featured_projects:
   - /projects/1_pseudospin_locked_chiral_edge/
   - /projects/4_mdec/
@@ -17,13 +17,13 @@ announcements:
     <p class="eyebrow">Photonic Structures · Wave Control · Device Design</p>
     <h1 id="intro-title">Chengle Fan</h1>
     <p class="intro-role">Undergraduate researcher at <a href="https://sustech.edu.cn/en/">SUSTech</a></p>
-    <p class="intro-lead">I explore how structure shapes light, turning physical insight into photonic design.</p>
-    <p>My work connects electromagnetic modeling, photonic design, and microwave experiments. I am interested in extending this approach to reconfigurable nanophotonic and integrated devices for optical information processing and sensing.</p>
+    <p class="intro-lead">I explore how the architecture of matter opens new possibilities for light.</p>
+    <p>Through electromagnetic modeling, photonic design, and microwave experiments, I study how structure shapes the behavior of light. My interests span two directions: reconfigurable nanophotonic structures that control optical modes and light–matter interactions for tunable devices and sensing; and programmable photonic circuits and optical neural networks for optical information processing and artificial intelligence.</p>
     <div class="action-links">
       <a class="button-primary" href="{{ '/projects/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
       <a class="button-secondary" href="{{ '/cv/' | relative_url }}">View my CV</a>
     </div>
-    <div class="intro-contact"><a class="intro-email" href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a></div>
+    <div class="intro-contact"><a class="intro-email" href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a><a class="intro-email" href="mailto:{{ site.data.cv.cv.academic_email }}">{{ site.data.cv.cv.academic_email }}</a></div>
   </div>
   <figure class="intro-portrait">
     <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Portrait of Chengle Fan" width="480" height="600" fetchpriority="high">
@@ -42,10 +42,10 @@ announcements:
     <div class="research-interests">
       <h3>Research interests</h3>
       <ul>
-        <li>Nanophotonics & integrated photonic devices</li>
-        <li>Optical modes & light–matter interactions</li>
-        <li>Reconfigurable photonic structures</li>
-        <li>Topological & time-varying wave systems</li>
+        <li>Nanophotonics & light–matter interactions</li>
+        <li>Reconfigurable devices & optical sensing</li>
+        <li>Integrated photonics & programmable circuits</li>
+        <li>Optical computing & optical neural networks</li>
       </ul>
     </div>
   </div>
@@ -81,7 +81,7 @@ announcements:
 </section>
 
 <section class="home-section" aria-labelledby="manuscript-heading">
-  <div class="section-heading"><h2 id="manuscript-heading">Manuscripts</h2><a href="{{ '/publications/' | relative_url }}">Manuscript details <span aria-hidden="true">↗</span></a></div>
+  <div class="section-heading"><h2 id="manuscript-heading">Manuscripts & preprints</h2><a href="{{ '/publications/' | relative_url }}">View all manuscripts <span aria-hidden="true">↗</span></a></div>
   <div class="publications">{% bibliography --query @*[selected=true] %}</div>
 </section>
 

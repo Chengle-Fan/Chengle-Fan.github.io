@@ -2,6 +2,7 @@ cv:
   name: Chengle Fan
   label: Undergraduate Student, Optoelectronic Information Science and Engineering
   email: chandler.chengle.fan@gmail.com
+  academic_email: 12312307@mail.sustech.edu.cn
   location: Shenzhen, China
   image: ""
   summary: >
@@ -27,19 +28,22 @@ cv:
         end_date: "Apr. 27, 2026"
 
     Research Interests:
-      - name: Nanophotonics and integrated photonic devices
+      - name: Nanophotonics, integrated photonics, and optical computing
         summary: >
-          Controlling optical modes and light–matter interactions in structured media and
-          developing reconfigurable systems for optical information processing and sensing.
+          My interests span controlling optical modes and light–matter interactions in
+          reconfigurable nanophotonic structures for tunable devices and sensing, as well as
+          developing programmable photonic circuits for optical information processing and
+          optical neural networks for artificial intelligence.
 
-    Manuscripts in Preparation:
-      - title: Experimental observation and routing of pseudospin-locked chiral edge states in a gyromagnetic photonic crystal
+    Manuscripts and Preprints:
+      - title: Observation of pseudospin-locked chiral edge transport in gyromagnetic photonic crystals
         authors:
           - Chengle Fan*
           - Kaizhou Shi*
           - Xiang Xi†
           - Zhen Gao†
-        publisher: "Manuscript in preparation. * Equal contribution (co-first authors); † Corresponding authors."
+        publisher: "Submitted to Physical Review Letters. * Equal contribution (co-first authors); † Corresponding authors."
+        arxiv: "2611.04827"
         releaseDate: 2026
       - title: Cavity-Tunable Dirac Phases in a Microwave Metasurface
         authors:
@@ -50,20 +54,20 @@ cv:
           - Yan Meng†
           - Baile Zhang†
           - Zhen Gao†
-        publisher: "Manuscript in preparation. * Equal contribution (co-first authors); † Corresponding authors."
+        publisher: "Manuscript in preparation; intended submission to Nature Physics. * Equal contribution (co-first authors); † Corresponding authors."
         releaseDate: 2026
-      - title: Cavity-tunable Orbital Band Inversion and Helical Edge Transport
+      - title: Cavity-tunable Pseudospin-Hall Topology and Edge Transport
         authors:
           - Minghui Niu*
           - Yan Meng*†
           - Chengle Fan
           - Xiaoyuan Jiao
           - Jidong Song
-          - Gina Jinna Chen
           - Perry Ping Shum
           - Zhen Gao†
           - Mengyao Li†
-        publisher: "Manuscript in preparation. * Equal contribution (co-first authors); † Corresponding authors."
+        publisher: "Submitted to Physical Review Letters. * Equal contribution (co-first authors); † Corresponding authors."
+        arxiv: "2610.20343"
         releaseDate: 2026
 
     Research Experience:

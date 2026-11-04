@@ -8,6 +8,7 @@ layout: page
     {% if page.cv_pdf %}<a class="button-primary" href="{{ page.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open CV PDF in a new tab">Open CV (PDF) <span aria-hidden="true">↗</span></a>{% endif %}
     <a class="button-secondary" href="mailto:{{ cv.email }}">Email me</a>
   </div>
+  {% if cv.academic_email %}<div class="cv-location">University email: <a href="mailto:{{ cv.academic_email }}">{{ cv.academic_email }}</a></div>{% endif %}
 </div>
 <div class="academic-cv">
 {% for section in cv.sections %}
@@ -34,6 +35,7 @@ layout: page
           {%- endfor -%}
         </p>
         <p class="research-status">{{ entry.publisher }} · {{ entry.releaseDate }}</p>
+        {% if entry.arxiv %}<p><a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv:{{ entry.arxiv }}</a></p>{% endif %}
       {% elsif entry.awarder %}
         <div class="cv-entry-heading"><h3>{{ entry.title }}</h3><p class="cv-date">{{ entry.date }}</p></div>
         <p class="cv-location">{{ entry.awarder }}</p>

@@ -8,7 +8,7 @@ category: research
 short_title: "Cavity-tunable Dirac phases & refraction"
 platform: "Microwave metasurfaces"
 role: "Experimental measurements & refraction modeling"
-status: "Manuscript in preparation; refraction study ongoing"
+status: "Manuscript in preparation; intended submission to Nature Physics"
 summary: "Studying how the cavity environment shapes photonic modes, with experimental measurements of Dirac phases and ongoing modeling of refraction."
 ---
 
@@ -32,6 +32,6 @@ I am now investigating cavity-controlled refraction by analyzing simulated bands
 {% include figure.liquid path="assets/img/projects/mdec/refraction_candidate.png" title="Preliminary cavity-controlled refraction analysis" alt="Calculated isofrequency contours and predicted ray directions for candidate single-channel and dual-channel refraction at two cavity heights" class="img-fluid rounded" %}
 <div class="caption"><strong>Preliminary numerical exploration.</strong> At a common frequency and incidence angle, band-data analysis identifies candidate single-channel and dual-channel refraction for two cavity heights. The arrows and rays indicate predicted directions; they do not represent simulated beam profiles or measured power. Eigenmode coupling, beam propagation, and channel power remain to be validated.</div>
 
-The Dirac-phase manuscript is in preparation; the refraction work is an ongoing exploratory extension.
+The Dirac-phase manuscript is in preparation, with intended submission to Nature Physics; the refraction work is an ongoing exploratory extension.
 
 <a class="text-link" href="{{ '/publications/' | relative_url }}">Manuscript and author details <span aria-hidden="true">↗</span></a>

@@ -1,18 +1,18 @@
 ---
 layout: research
 title: Cavity-Controlled Helical Edge Transport
-description: Experimental contribution to a study of cavity-tunable orbital band inversion and helical edge transport
+description: Experimental contribution to a study of cavity-tunable pseudospin-Hall topology and edge transport
 img: assets/img/projects/cavity_transport/transport_cover.png
 importance: 5
 category: research
 short_title: "Cavity-controlled helical edge transport"
 platform: "Microwave photonics"
 role: "Experimental contribution"
-status: "Manuscript in preparation"
+status: "Submitted to Physical Review Letters"
 summary: "Contributing to experiments on the control of photonic edge transport through changes in the cavity environment."
 ---
 
-**Context:** Collaborative research at SUSTech. The manuscript *Cavity-tunable Orbital Band Inversion and Helical Edge Transport* is in preparation.
+**Context:** Collaborative research at SUSTech. The manuscript *Cavity-tunable Pseudospin-Hall Topology and Edge Transport* has been submitted to Physical Review Letters. The preprint is available at [arXiv:2610.20343](https://arxiv.org/abs/2610.20343).
 
 ## Research focus
 

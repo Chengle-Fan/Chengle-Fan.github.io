@@ -8,7 +8,7 @@ category: research
 short_title: "Pseudospin-locked chiral edge states"
 platform: "Microwave photonic crystals"
 role: "Modeling, design, experiments & manuscript preparation"
-status: "Manuscript in preparation"
+status: "Submitted to Physical Review Letters"
 summary: "Investigating pseudospin-selective chiral transport and photonic routing through full-wave modeling, sample design, and microwave experiments."
 ---
 
@@ -19,7 +19,7 @@ summary: "Investigating pseudospin-selective chiral transport and photonic routi
 How can the internal structure of a photonic mode be used to control where a wave travels? This project explores the connection between pseudospin, nonreciprocal edge transport, and routing in gyromagnetic photonic crystals.
 
 {% include figure.liquid path="assets/img/projects/gyromagnetic_phc/concept.jpeg" title="Edge-transport concepts" alt="Conceptual comparison of helical, chiral, and pseudospin-locked chiral edge transport with illustrative dispersion diagrams" class="img-fluid rounded" %}
-<div class="caption">Project overview: helical, chiral, and pseudospin-locked chiral edge transport, with illustrative dispersion diagrams. This figure introduces the transport concepts; experimental results will accompany the manuscript.</div>
+<div class="caption">Project overview: helical, chiral, and pseudospin-locked chiral edge transport, with illustrative dispersion diagrams. This figure introduces the transport concepts; see the linked preprint for the experimental study.</div>
 
 ## My contribution
 
@@ -31,6 +31,6 @@ The project has given me experience connecting a physical mechanism to a sample 
 
 ## Current status
 
-The manuscript is in preparation.
+The manuscript, *Observation of pseudospin-locked chiral edge transport in gyromagnetic photonic crystals*, has been submitted to Physical Review Letters. The preprint is available at [arXiv:2611.04827](https://arxiv.org/abs/2611.04827).
 
 <a class="text-link" href="{{ '/publications/' | relative_url }}">Manuscript and author details <span aria-hidden="true">↗</span></a>
