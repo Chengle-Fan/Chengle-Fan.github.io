@@ -47,6 +47,9 @@ layout: page
       {% endif %}
     </article>
     {% endfor %}
+    {% assign section_name = section[0] %}
+    {% assign section_note = cv.section_notes[section_name] %}
+    {% if section_note %}<p class="cv-section-note">{{ section_note }}</p>{% endif %}
   </section>
 {% endfor %}
 </div>
