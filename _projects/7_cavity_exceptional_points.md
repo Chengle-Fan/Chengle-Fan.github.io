@@ -1,15 +1,15 @@
 ---
 layout: research
 title: Cavity-Tunable Exceptional Points
-description: Contribution to revision-stage experiments on cavity-tunable exceptional points
+description: Contribution to experimental measurements in a study of cavity-tunable exceptional points
 img: assets/img/projects/cavity_ep/resonator_chain_schematic.png
 importance: 6
 category: research
 short_title: "Cavity-tunable exceptional points"
 platform: "Non-Hermitian photonics"
-role: "Revision-stage experimental contribution"
-status: "Revision-stage study"
-summary: "Contributing to experimental measurements during the revision of a study of cavity-tunable exceptional points."
+role: "Experimental contribution"
+status: "Collaborative study"
+summary: "Contributing to experimental measurements in a study of cavity-tunable exceptional points."
 ---
 
 **Context:** Collaborative research at SUSTech.
@@ -23,6 +23,6 @@ This study explores the relationship between the cavity environment and exceptio
 
 ## My contribution
 
-I participated in experimental modifications and measurements during manuscript revision. This work gave me experience with the additional experimental checks needed to support and refine a research manuscript.
+I contributed to experimental measurements in a study of cavity-tunable exceptional points.
 
 Detailed results will be shared through the research publication.
